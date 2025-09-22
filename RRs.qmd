@@ -1,0 +1,78 @@
+---
+project:
+  type: website
+output-dir: docs
+format:
+  revealjs:
+    logo: images/logos.png
+    footer: "Juan David Leongómez <span style='font-size: 70%;'>PhD, MSc</span>"
+    theme: simple
+    center: true
+    slide-number: true
+    transition: fade
+    background-transition: fade
+toc: false
+---
+
+## De la teoría a la práctica: [Fortaleciendo la integridad científica con *Prerregistro* y *Registered Reports*]{style="font-size: 70%;"}
+
+<br>**Juan David Leongómez** [PhD, MSc]{style="font-size: 70%;"}<br> [[jleongomez\@unbosque.edu.co](mailto:jleongomez@unbosque.edu.co)]{style="font-size: 70%;"}<br>
+
+<img src="images/logos.png" height="100"/>
+
+[ISHE Summer Institute 2025 · Valparaíso, Chile]{style="font-size: 70%;"}
+
+------------------------------------------------------------------------
+
+### 📲 Accede a las diapositivas en línea {style="color:#f7766d;"}
+
+![](images/presentation-qr.png){width="50%"}
+
+[https://jdleongomez.github.io/preregistration-and-RRs/](https://jdleongomez.github.io/preregistration-and-RRs/){style="font-size: 70%;"}
+
+------------------------------------------------------------------------
+
+## Panorama general
+
+### 🧭 Esquema del taller
+
+1.  **Los retos para la credibilidad científica**\
+    Crisis de replicación, prácticas cuestionables y estructuras de incentivos.
+
+2.  **Prerregistro**\
+    Qué es, cómo funciona y por qué mejora la transparencia en la investigación.
+
+3.  **Registered Reports**\
+    Un modelo de revisión por pares que pone el énfasis en el diseño y el rigor del estudio.
+
+------------------------------------------------------------------------
+
+## Parte 1: Los retos para la credibilidad científica
+
+------------------------------------------------------------------------
+
+###  {auto-animate="true"}
+
+**P:** ¿Qué porcentaje de los hallazgos publicados en psicología son estadísticamente significativos?\
+
+------------------------------------------------------------------------
+
+###  {auto-animate="true"}
+
+**P:** ¿Qué porcentaje de los hallazgos publicados en psicología son estadísticamente significativos?\
+**R:** [96%]{style="font-size: 150%; color:#f7766d;"}
+
+------------------------------------------------------------------------
+
+###  {auto-animate="true"}
+
+**P:** ¿Qué porcentaje de los hallazgos publicados en psicología son estadísticamente significativos?\
+**R:** [96%]{style="font-size: 150%; color:#f7766d;"}
+
+![](images/p05.png)
+
+------------------------------------------------------------------------
+
+###  {auto-animate="true"}
+
+**P:** ¿Qué porcentaje de los ha
