@@ -11,6 +11,12 @@ format:
     slide-number: true
     transition: fade
     background-transition: fade
+    incremental: true
+    controls: true
+    auto-animate: true
+    auto-animate-easing: ease-in-out
+    auto-animate-unmatched: false
+    auto-animate-duration: 0.8
 toc: false
 title: "MetaCiencia: Ciencia Abierta, Reproducibilidad y Transparencia"
 subtitle: "De la crisis de replicación a las prácticas abiertas"
