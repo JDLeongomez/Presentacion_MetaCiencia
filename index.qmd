@@ -1,13 +1,23 @@
 ---
-project:
-  type: website
-output-dir: docs
+title: |
+  MetaCiencia:
+  <span style="font-size:70%;">Ciencia Abierta, Reproducibilidad y Transparencia</span>
+subtitle: "¿Cómo enfrentamos los retos de la ciencia?"
+author: "<span class='author-name' style='font-size:70%;'><strong>Juan David Leongómez</strong></span>
+  <span class='author-degrees' style='font-size:45%;'>PhD, MSc</span><br>
+  <span class='author-email'>
+    <a href='mailto:jleongomez@unbosque.edu.co'
+       style='font-size:60%; color:#d400aa !important; text-decoration:none;'>
+      jleongomez@unbosque.edu.co
+    </a>
+  </span>"
+
 format:
   revealjs:
-    logo: images/logos.png
-    footer: "MetaCiencia · Juan David Leongómez <span style='font-size: 70%;'>PhD, MSc</span>"
-    theme: simple
+    theme: [simple]
+    css: styles/simple-metaciencia.css
     center: true
+    center-title-slide: false
     slide-number: true
     transition: fade
     background-transition: fade
@@ -17,29 +27,123 @@ format:
     auto-animate-easing: ease-in-out
     auto-animate-unmatched: false
     auto-animate-duration: 0.8
+    logo: img/logos.png
+    footer: |
+      <span style="font-size:90%;"><strong>Juan David Leongómez</strong></span>
+      <span style="font-size:50%;">PhD, MSc</span>
+
+lang: es
+
+title-slide-attributes:
+  data-background-image: img/icono_MetaCiencia.png   # <- usa data-*
+  data-background-size: contain
+  data-background-opacity: "0.3"
 toc: false
-title: "MetaCiencia: Ciencia Abierta, Reproducibilidad y Transparencia"
-subtitle: "De la crisis de replicación a las prácticas abiertas"
 ---
 
-## Portada
+```{r}
+# Paquetes
+library(dplyr)
+library(stringr)
+library(gt)
+```
 
-**Juan David Leongómez** <span style="font-size: 70%;">PhD, MSc</span>  
-[jleongomez@unbosque.edu.co](mailto:jleongomez@unbosque.edu.co)  
+![](img/logo_MetaCiencia.png){fig-align="center" width="40%"}
 
-<img src="images/logos.png" height="100"/>
+---
 
-<span style="font-size: 70%;">Universidad El Bosque · Facultad de Psicología</span>
+### 📲 Accede a las diapositivas en línea
+
+![](img/presentation-qr.png){width="45%"}
+
+::: {.aside .center}
+Sitio / materiales / enlaces
+:::
 
 ---
 
-### 📲 Diapositivas y recursos {style="color:#f7766d;"}
-
-![](images/presentation-qr.png){width="45%"}
-
-<span style="font-size: 70%;">Sitio / materiales / enlaces</span>
+## Parte 1: Los desafíos para la credibilidad científica {auto-animate="true"}
 
 ---
+
+## Parte 1: Los desafíos para la credibilidad científica {auto-animate="true"}
+
+¿Cómo se crea conocimiento?
+
+::: {.fragment .fade-in style="margin-top: 30px; font-size: 0.8em; color: #d400aa;"}
+¿Si mi gato hace más pataletas, sueño más con empanadas?
+:::
+
+---
+
+## Parte 1: Los desafíos para la credibilidad científica {auto-animate="true"}
+
+::: {.fragment style="font-size: 0.8em; color: #d400aa;"}
+¿Si mi gato hace más pataletas, sueño más con empanadas?
+:::
+
+![](img/variacion_muestral_base_estatica.png){width="45%"}
+
+---
+
+## Parte 1: Los desafíos para la credibilidad científica {auto-animate="true"}
+
+**P:** ¿Qué porcentaje de los hallazgos publicados en psicología son estadísticamente significativos?\
+
+---
+
+## Parte 1: Los desafíos para la credibilidad científica {auto-animate="true"}
+
+**P:** ¿Qué porcentaje de los hallazgos publicados en psicología son estadísticamente significativos?\
+**R:** [96%]{style="font-size: 150%; color:#f7766d;"}
+
+---
+
+## Parte 1: Los desafíos para la credibilidad científica {auto-animate="true"}
+
+**P:** ¿Qué porcentaje de los hallazgos publicados en psicología son estadísticamente significativos?\
+**R:** [96%]{style="font-size: 150%; color:#f7766d;"}
+
+![](img/p05.png)
+
+---
+
+## Parte 1: Los desafíos para la credibilidad científica {auto-animate="true"}
+
+**P:** ¿Qué porcentaje de los hallazgos publicados en psicología son estadísticamente significativos?\
+**R:** [96%]{style="font-size: 150%; color:#f7766d;"}
+
+![](img/power.gif?v=1)
+
+---
+
+## Parte 1: Los desafíos para la credibilidad científica {auto-animate="true"}
+
+<https://shiny.jdl-svr.lat/PowerSimulate_ind_t_EN/>
+
+<iframe src="https://shiny.jdl-svr.lat/PowerSimulate_ind_t_EN/" width="100%" height="500px" style="border: 3px solid #ccc; border-radius: 8px;">
+</iframe>
+
+---
+
+### 1.1 ¿Podemos confiar en la literatura? {auto-animate="true"}
+
+Hay 2 opciones:
+
+1.  Estudiamos efectos con >90% de potencia y >90% de probabilidad de ser verdaderos.
+
+---
+
+### 1.1 ¿Podemos confiar en la literatura? {auto-animate="true"}
+
+Hay 2 opciones:
+
+1.  Estudiamos efectos con >90% de potencia y >90% de probabilidad de ser verdaderos.
+2.  Existe un **sesgo de publicación masivo**.
+
+---
+
+
 
 ## Parte 1 · ¿Por qué necesitamos una Ciencia Abierta?
 
@@ -71,7 +175,7 @@ Breve storytelling: ¿qué espera la sociedad de la ciencia? ¿Qué estamos entr
 
 ### El filtro de significancia
 
-![](images/image-5.png){width="80%"}
+![](img/image-5.png){width="80%"}
 
 <span style="font-size: 70%;">Distribuciones sesgadas por seleccionar solo p &lt; .05</span>
 
