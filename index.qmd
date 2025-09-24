@@ -54,7 +54,7 @@ library(gt)
 
 ### 📲 Accede a las diapositivas en línea
 
-![](img/presentation-qr.png){width="45%"}
+![](img/presentation-qr.svg){width="45%"}
 
 ::: {.aside .center}
 Sitio / materiales / enlaces
