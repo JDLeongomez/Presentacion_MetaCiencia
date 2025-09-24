@@ -1,79 +1,221 @@
-/* ====== ELIGE UNA OPCIÓN DE FUENTES ====== */
+/* =========================================================
+   MetaCiencia · Quarto revealjs (tema: simple)
+   Tipografías, colores base negros, acentos #d400aa,
+   overlay SOLO en portada, utilidades.
+   ========================================================= */
 
-/* Opción A: “fuentes del sky” (encabezados Quicksand, cuerpo Open Sans) */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Open+Sans:wght@400;600&display=swap');
-:root{
-  --r-main-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --r-heading-font: "Quicksand", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
+/* ====== TIPOGRAFÍAS (activa UNA opción) ====== */
 
-/* Opción B: todo con Nunito (descomenta este bloque y comenta el de arriba) */
-/*
+/* Opción A: Nunito (ACTIVA) */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 :root{
   --r-main-font: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --r-heading-font: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
+
+/* Opción B: “sky” (Quicksand + Open Sans) — descomenta si prefieres
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Open+Sans:wght@400;600&display=swap');
+:root{
+  --r-main-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --r-heading-font: "Quicksand", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
 */
 
-/* Aplica las variables de fuentes */
+/* Aplicar fuentes */
 .reveal{ font-family: var(--r-main-font) !important; }
-.reveal h1, .reveal h2, .reveal h3, .reveal h4{
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6{
   font-family: var(--r-heading-font) !important;
   letter-spacing: .2px;
+  background: transparent !important;
+  box-shadow: none !important;
 }
-
-/* Tamaños un pelín más amables con simple (ajusta a gusto) */
 .reveal h1{ font-weight: 700; }
 .reveal h2{ font-weight: 700; }
 .reveal h3{ font-weight: 600; }
 
-/* ====== ACENTOS META-CIENCIA (#d400aa) ====== */
+/* ====== COLORES BASE ====== */
 :root{
-  --r-link-color: #d400aa;
+  --r-main-color: #111;            /* texto por defecto */
+  --r-heading-color: #111;         /* encabezados */
+  --r-link-color: #d400aa;         /* acento MetaCiencia */
   --r-link-color-hover: #ff4fd4;
 }
+
+/* Texto por defecto en negro */
+.reveal{ color: var(--r-main-color) !important; }
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6{
+  color: var(--r-heading-color) !important;
+}
+
+/* Enlaces (incluye footer) */
 .reveal a,
-.reveal .footer a{ color: var(--r-link-color); text-decoration: none; }
+.reveal .footer a{ color: var(--r-link-color) !important; text-decoration: none; }
 .reveal a:hover, .reveal a:focus,
 .reveal .footer a:hover, .reveal .footer a:focus{
-  color: var(--r-link-color-hover); text-decoration: underline;
+  color: var(--r-link-color-hover) !important; text-decoration: underline;
 }
+
+/* Controles y barra de progreso a juego */
 .reveal .controls button{ color: var(--r-link-color); }
 .reveal .progress{ background: #f6e2f1; }
 .reveal .progress span{ background: #d400aa; }
 
-/* ====== PORTADA: overlay y estilos del autor (como ya tenías) ====== */
-.reveal .slides section.title-slide{ position: relative; }
-.reveal .slides section.title-slide::before{
+/* ====== PORTADA (SOLO) ======
+   Añade en el YAML:
+   title-slide-attributes:
+     class: cover-title
+     data-background-image: images/prisma.png
+     data-background-size: cover
+     data-background-position: center
+*/
+.reveal .slides section.cover-title{ position: relative; }
+.reveal .slides section.cover-title::before{
   content:""; position:absolute; inset:0;
   background: radial-gradient(ellipse at 50% 45%, rgba(0,0,0,.10), rgba(0,0,0,.60) 70%);
   pointer-events:none;
 }
-.reveal .title-slide h1,
-.reveal .title-slide h2,
-.reveal .title-slide p,
-.reveal .title-slide .quarto-title-authors{
+.reveal .cover-title h1,
+.reveal .cover-title h2,
+.reveal .cover-title p,
+.reveal .cover-title .quarto-title-authors{
   color:#fff !important; text-shadow:0 2px 10px rgba(0,0,0,.55);
 }
-/* Bloque del título más compacto */
+/* Bloque del título más compacto + autor en portada */
 .reveal .quarto-title-block{ font-size:.75em; }
-/* Autor */
 .reveal .quarto-title-block .author-name{ font-weight:700; font-size:1.1em; }
 .reveal .quarto-title-block .author-degrees{ font-size:.7em; }
-.reveal .quarto-title-block .author-email a,
-.reveal .title-slide .quarto-title-block .author-email a:visited{
+.reveal .cover-title .quarto-title-block .author-email a,
+.reveal .cover-title .quarto-title-block .author-email a:visited{
   color: var(--r-link-color) !important; text-decoration:none;
 }
 
-.reveal .slides section .aside.center-text{
+/* ====== TÍTULOS DE SECCIÓN (NO portada) ====== */
+.reveal .slides section.title-slide:not(.cover-title)::before{ content:none !important; }
+.reveal .slides section.title-slide:not(.cover-title) h1,
+.reveal .slides section.title-slide:not(.cover-title) h2,
+.reveal .slides section.title-slide:not(.cover-title) p{
+  color:#111 !important;
+  text-shadow:none !important;
+  background:transparent !important;
+  box-shadow:none !important;
+}
+
+/* ====== UTILIDADES ====== */
+.reveal .slides section .aside.center-text{ text-align: center; }
+
+/* Efecto blur para fragments */
+.reveal .slides section .fragment.blur { filter: blur(5px); }
+.reveal .slides section .fragment.blur.visible { filter: none; }
+
+/* Resaltado manual por clic (ver JS en YAML si lo usas) */
+.is-accent { color: var(--r-link-color) !important; }
+.accent-on-click { cursor: pointer; }
+
+/* Resaltar el fragmento “actual” al avanzar */
+.reveal .current-fragment { color: var(--r-link-color) !important; }
+
+/* ==== Matriz reproducible/replicable (con merges) ==== */
+.meta-matrix{ width:100%; border-collapse:separate; border-spacing:0; font-size:24px; }
+.meta-matrix th, .meta-matrix td{ padding:18px 20px; border:1px solid #e5e7eb; vertical-align:middle; }
+.meta-matrix .empty{ border:none; background:transparent; }
+
+/* Spanner horizontal */
+.meta-matrix .spanner{ background:#d400aa; color:#fff; font-weight:700; text-align:center; }
+
+/* Encabezados de columnas (Mismos/Diferentes) */
+.meta-matrix thead th{ background:#f3f4f6; color:#111; font-weight:700; text-align:left; }
+.meta-matrix thead th:nth-child(3), .meta-matrix thead th:nth-child(4){ text-align:center; }
+
+/* Stub de filas (columna 2) */
+.meta-matrix .rowhead{ background:#f3f4f6; color:#111; font-weight:700; text-align:left; }
+
+/* “Código/Análisis” vertical con rowspan REAL */
+.meta-matrix .stubhead{
+  background:#d400aa; color:#fff; font-weight:700; text-align:center;
+  writing-mode:vertical-rl; transform:rotate(180deg);
+  padding:14px 10px; min-width:110px;
+}
+
+/* Opcional: hacerla aún más grande por slide */
+.meta-matrix.big{ font-size:28px; }
+
+/* Fit-to-content para toda la tabla + centrado global */
+.meta-matrix{
+  width: auto !important;        /* deja de ocupar 100% */
+  table-layout: auto;            /* que el contenido mande */
+  margin: 0 auto;                /* centra la tabla en la slide */
+}
+
+/* centra TODO el texto (thead + tbody) */
+.meta-matrix th,
+.meta-matrix td{
+  text-align: center !important;
+}
+
+/* ya que ahora centramos todo, anulamos lo anterior */
+.meta-matrix thead th{ background:#f3f4f6; color:#111; font-weight:700; }
+
+/* la cabecera vertical (columna 1) bien compacta */
+.meta-matrix .stubhead{
+  min-width: 0 !important;
+  width: 1% !important;          /* deja que el resto se reparta */
+  padding: 10px 6px;
+  white-space: nowrap;
+}
+
+/* las celdas “vacías” del thead no deben abrir columna */
+.meta-matrix thead th.empty{
+  width: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+/* opcional: evita saltos de línea, para que realmente ajuste a contenido */
+.meta-matrix td, .meta-matrix th{ white-space: nowrap; }
+
+/* Iconos/Logos en línea, del tamaño del texto y bien alineados */
+.logo{
+  height: 1.1em;          /* escala con el tamaño del texto */
+  vertical-align: -0.12em;/* alinea con la línea base del texto */
+  margin-left: .45em;     /* espacio antes del icono */
+  margin-right: .1em;
+}
+
+/* Opcional: si algún logo es muy saturado o “grita”, usa .logo.mono */
+.logo.mono{ filter: grayscale(.1) brightness(1.05) contrast(1.05); }
+
+/* Si quieres que los logos aparezcan con un pequeño fade-in por separado: */
+.fragment-logo{ opacity: .75; }        /* estado inicial suave */
+.reveal .current-fragment.fragment-logo{ opacity: 1; }  /* cuando aparece */
+
+/* Banda de llamado a la acción */
+.cta-banner{
+  display:block;
+  margin-top: .6em;
+  padding: .7em 1em;
+  background: var(--r-link-color);
+  color: #fff;
+  border-radius: 12px;
   text-align: center;
+  font-weight: 800;
+  letter-spacing: .2px;
+  box-shadow: 0 6px 20px rgba(212,0,170,.25);
 }
 
-.reveal .slides section .fragment.blur {
-  filter: blur(5px);
+/* Poster/hero para mensajes clave */
+.poster{
+  display:block; padding:1.1em 1.2em; border-radius:16px;
+  background:#fff; box-shadow:0 8px 28px rgba(17,17,17,.10);
+  text-align:center;
+}
+.poster .overline{
+  font-weight:800; text-transform:uppercase; letter-spacing:.12em;
+  font-size:.75em; color:#555;
+}
+.poster .title{
+  display:block; font-weight:900; font-size:1.6em; margin:.15em 0 .1em;
+}
+.poster .subtitle{
+  color:#444; font-weight:600; letter-spacing:.2px;
 }
 
-.reveal .slides section .fragment.blur.visible {
-  filter: none
-}

@@ -21,9 +21,9 @@ format:
     slide-number: true
     transition: fade
     background-transition: fade
-    incremental: true
+    incremental: false
     controls: true
-    auto-animate: true
+    auto-animate: false
     auto-animate-easing: ease-in-out
     auto-animate-unmatched: false
     auto-animate-duration: 0.8
@@ -31,7 +31,7 @@ format:
     footer: |
       <span style="font-size:90%;"><strong>Juan David Leongómez</strong></span>
       <span style="font-size:50%;">PhD, MSc</span>
-
+      
 lang: es
 
 title-slide-attributes:
@@ -60,13 +60,11 @@ library(gt)
 Sitio / materiales / enlaces
 :::
 
----
-
-## Parte 1: Los desafíos para la credibilidad científica {auto-animate="true"}
+# [Parte 1 · Los desafíos para la credibilidad científica]{.is-accent auto-animate="true"}
 
 ---
 
-## Parte 1: Los desafíos para la credibilidad científica {auto-animate="true"}
+## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
 
 ¿Cómo se crea conocimiento?
 
@@ -76,282 +74,469 @@ Sitio / materiales / enlaces
 
 ---
 
-## Parte 1: Los desafíos para la credibilidad científica {auto-animate="true"}
+## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
 
-::: {.fragment style="font-size: 0.8em; color: #d400aa;"}
+::: {style="font-size: 0.8em; color: #d400aa;"}
 ¿Si mi gato hace más pataletas, sueño más con empanadas?
 :::
 
-![](img/variacion_muestral_base_estatica.png){width="45%"}
+![](img/variacion_muestral_base_estatica.png)
 
 ---
 
-## Parte 1: Los desafíos para la credibilidad científica {auto-animate="true"}
+## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
 
-**P:** ¿Qué porcentaje de los hallazgos publicados en psicología son estadísticamente significativos?\
+::: {style="font-size: 0.8em; color: #d400aa;"}
+¿Si mi gato hace más pataletas, sueño más con empanadas?
+:::
 
----
-
-## Parte 1: Los desafíos para la credibilidad científica {auto-animate="true"}
-
-**P:** ¿Qué porcentaje de los hallazgos publicados en psicología son estadísticamente significativos?\
-**R:** [96%]{style="font-size: 150%; color:#f7766d;"}
+![](img/simulacion_estudios_slow.gif?v=1)
 
 ---
 
-## Parte 1: Los desafíos para la credibilidad científica {auto-animate="true"}
+## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
 
-**P:** ¿Qué porcentaje de los hallazgos publicados en psicología son estadísticamente significativos?\
-**R:** [96%]{style="font-size: 150%; color:#f7766d;"}
+::: {style="font-size: 0.8em; color: #d400aa;"}
+¿Si mi gato hace más pataletas, sueño más con empanadas?
+:::
+
+![](img/simulacion_estudios_fast.gif?v=1)
+
+---
+
+## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
 
 ![](img/p05.png)
 
 ---
 
-## Parte 1: Los desafíos para la credibilidad científica {auto-animate="true"}
-
-**P:** ¿Qué porcentaje de los hallazgos publicados en psicología son estadísticamente significativos?\
-**R:** [96%]{style="font-size: 150%; color:#f7766d;"}
+## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
 
 ![](img/power.gif?v=1)
 
 ---
 
-## Parte 1: Los desafíos para la credibilidad científica {auto-animate="true"}
+## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
 
-<https://shiny.jdl-svr.lat/PowerSimulate_ind_t_EN/>
+<https://shiny.jdl-svr.lat/PowerSimulate_corr_ES/>
 
-<iframe src="https://shiny.jdl-svr.lat/PowerSimulate_ind_t_EN/" width="100%" height="500px" style="border: 3px solid #ccc; border-radius: 8px;">
+<iframe src="https://shiny.jdl-svr.lat/PowerSimulate_corr_ES/" width="100%" height="400px" style="border: 3px solid #ccc; border-radius: 8px;">
+
 </iframe>
 
 ---
 
-### 1.1 ¿Podemos confiar en la literatura? {auto-animate="true"}
+## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
+
+**Pregunta:** ¿Qué porcentaje de los hallazgos publicados en psicología son estadísticamente significativos?\
+
+---
+
+## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
+
+**Pregunta:** ¿Qué porcentaje de los hallazgos publicados en psicología son estadísticamente significativos?\
+**Respuesta:** [96%]{style="font-size: 150%; color:#d400aa;"}
+
+---
+
+## 1.2 ¿Podemos confiar en la literatura? {auto-animate="true"}
 
 Hay 2 opciones:
 
-1.  Estudiamos efectos con >90% de potencia y >90% de probabilidad de ser verdaderos.
-
----
-
-### 1.1 ¿Podemos confiar en la literatura? {auto-animate="true"}
-
-Hay 2 opciones:
-
-1.  Estudiamos efectos con >90% de potencia y >90% de probabilidad de ser verdaderos.
-2.  Existe un **sesgo de publicación masivo**.
-
----
-
-
-
-## Parte 1 · ¿Por qué necesitamos una Ciencia Abierta?
-
----
-
-### Desafíos actuales
-
-- Acceso desigual al conocimiento y a la producción científica  
-- Crisis de replicación y resultados poco robustos  
-- Incentivos que favorecen “resultados positivos” y novedad  
-- Métodos opacos y bajo poder estadístico
-
-::: notes
-Breve storytelling: ¿qué espera la sociedad de la ciencia? ¿Qué estamos entregando?
+::: incremental
+1.  Estudiamos efectos con \>90% de potencia y \>90% de probabilidad de ser verdaderos.
+2.  [Existe un **sesgo de publicación masivo** (en múltiples disciplinas).]{.accent-on-click}
 :::
 
 ---
 
-### Evidencias clave
+## 1.3 El filtro de significancia {auto-animate="true"}
 
-- **Replicability**: tasas de replicación modestas y tamaños de efecto inflados  
-- **Sesgo de publicación**: sobre-representación de “hallazgos significativos”  
-- **Prácticas cuestionables**: p-hacking, HARKing, reporte selectivo  
-- **Transparencia limitada**: datos/código no compartidos, descripción incompleta
-
-> Mensaje: no es “culpa de personas”, es **sistémico** → necesitamos cambiar prácticas y estructuras.
+![](img/image-5.png){top="200" left="0" width="80%"}
 
 ---
 
-### El filtro de significancia
+## 1.3 El filtro de significancia {auto-animate="true"}
 
-![](img/image-5.png){width="80%"}
+::::: columns
+::: {.column width="50%"}
+1.2 millones de valores z investigación médica (1976–2019) ![](img/image.png){top="200" left="0" width="400"} <br> [[van Zwet & Cator (2021)](https://doi.org/10.1111/stan.12241)]{style="font-size: 50%;"}
+:::
 
-<span style="font-size: 70%;">Distribuciones sesgadas por seleccionar solo p &lt; .05</span>
+::: {.column .fragment .fade-in width="50%"}
+<br>También en PLOS ONE ![](img/image-1.png){top="200" right="50" width="400"}
+:::
+:::::
 
 ---
 
-## Parte 2 · Principios de la Ciencia Abierta
+## 1.4 Amenazas a la replicabilidad científica {auto-animate="true"}
 
 ---
 
-### Más allá del Open Access
+## 1.4 Amenazas a la replicabilidad científica {auto-animate="true"}
 
-- **Open Access** (con matices: gold/green/diamond, costos, *waivers*)  
-- **Open Data** (datos FAIR, reutilización responsable)  
-- **Open Methods** (protocolos, metadatos, decisiones analíticas)  
-- **Open Source** (software libre, entornos reproducibles)  
-- **Open Peer Review** (mayor escrutinio, trazabilidad)  
-- **Open Resources** (formación y materiales abiertos)
-
-::: callout-tip
-**Idea fuerza**: abrir el *proceso* científico, no solo los PDFs.
+::: incremental
+1.  🧪 **P-hacking**
+    * Probar múltiples análisis hasta obtener p \< .05
+    * Infla el error Tipo I
+2.  💡 **HARKing**
+    * *Hypothesising After Results are Known* (formular hipótesis tras conocer los resultados)
+    * Induce a error sobre la naturaleza de la prueba
 :::
 
 ---
 
-### Software libre y reproducibilidad
+## 1.4 Amenazas a la replicabilidad científica {auto-animate="true"}
 
-- Entornos con **R / Python** y control de versiones  
-- Documentos reproducibles (**Quarto**, R Markdown)  
-- Repositorios abiertos (OSF, GitHub, Zenodo)  
-- Pipelines auditables (scripts, *session info*, *containers*)
+💡 [**HARKing**]{.is-accent}
 
----
-
-## Parte 3 · Prerregistro (Pre-registration)
+![](img/HARKing.jpeg)
 
 ---
 
-### ¿Qué es el prerregistro?
+## 1.4 Amenazas a la replicabilidad científica {auto-animate="true"}
 
-Especificar **antes** del estudio:  
-- Preguntas e hipótesis  
-- Diseño y criterios (incluye exclusión/inclusión)  
-- Plan de análisis (variables, modelos, decisiones)
+::: incremental
+3.  📦 **Sesgo de publicación**
+    * Las revistas prefieren resultados “positivos”
+    * Los nulos van al cajón
+4.  📏 **Bajo poder estadístico**
+    * Muestras pequeñas → falsos negativos y efectos inflados
+:::
 
+---
+
+## 1.4 Amenazas a la replicabilidad científica {auto-animate="true"}
+
+Los **cuatro jinetes del apocalipsis de la reproducibilidad**
+
+::: r-stack
+![](img/4horsemen.png){.fragment fig-align="center" width="80%"}
+:::
+
+---
+
+##  {auto-animate="true"}
+
+![](img/4horsemen.png){fig-align="center" width="100%"}
+
+# [Parte 2 · ¿Por qué necesitamos una *Ciencia Abierta*?]{.is-accent auto-animate="true"}
+
+---
+
+## 2.1 Desafíos actuales {auto-animate="true"}
+
+[Acceso desigual al conocimiento y a la producción científica]{.is-accent}
+
+::: r-stack
+![](img/nat-inaccesibility.webp){.fragment fig-align="center" width="80%"}
+:::
+
+---
+
+## 2.1 Desafíos actuales {auto-animate="true"}
+
+[Acceso desigual al conocimiento y a la producción científica]{.is-accent}
+
+![](img/nat-inaccesibility.webp){fig-align="center" width="20%"}
+
+---
+
+## 2.1 Desafíos actuales {auto-animate="true"}
+
+[Acceso desigual al conocimiento y a la producción científica]{.is-accent}
+
+:::::: columns
+:::: {.column width="50%"}
+::: r-stack
+[![](img/weird.png){width="100%"}](https://doi.org/10.1017/S0140525X0999152X)
+:::
+::::
+
+::: {.column width="50%"}
+**Sociedades:**
+
+[**W**]{.is-accent}estern [(Occidentales)]{style="font-size: 70%; color:#b3b3b3;"}
+
+[**E**]{.is-accent}ducated [(Educadas)]{style="font-size: 70%; color:#b3b3b3;"}
+
+[**I**]{.is-accent}ndustrialised [(Industrializadas)]{style="font-size: 70%; color:#b3b3b3;"}
+
+[**R**]{.is-accent}ich [(Ricas)]{style="font-size: 70%; color:#b3b3b3;"}
+
+[**D**]{.is-accent}emocratic [(Democráticas)]{style="font-size: 70%; color:#b3b3b3;"}
+
+[[Henrich et al. (2010)](https://doi.org/10.1017/S0140525X0999152X)]{style="font-size: 50%;"}
+:::
+::::::
+
+---
+
+## 2.1 Desafíos actuales {auto-animate="true"}
+
+[Acceso desigual al conocimiento y a la producción científica]{.is-accent}
+
+![](img/Mapa_prod.png){fig-align="center" width="100%"}
+
+---
+
+## 2.1 Desafíos actuales {auto-animate="true"}
+
+**Adicionalmente:**
+
+::: incremental
+* Crisis de replicación y resultados poco robustos
+
+* Incentivos que favorecen “resultados positivos” y novedad
+
+* Métodos opacos y bajo poder estadístico
+
+:::
+
+---
+
+## 2.1 Desafíos actuales {auto-animate="true"}
+
+> [¿Qué espera y qué requiere la sociedad de la ciencia? ¿Qué estamos entregando?]{.is-accent style="font-size: 150%;"}
+
+---
+
+## 2.1 Desafíos actuales {auto-animate="true"}
+
+<table class="meta-matrix big">
+  <thead>
+    <tr>
+      <th class="empty"></th>
+      <th class="empty"></th>
+      <th class="spanner" colspan="2">Datos/Muestras</th>
+    </tr>
+    <tr>
+      <th class="empty"></th>
+      <th class="empty"></th>
+      <th>Mismos</th>
+      <th>Diferentes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <!-- rowspan REAL para “Código/Análisis” -->
+      <th class="stubhead" rowspan="2">Código/Análisis</th>
+      <th class="rowhead">Mismos</th>
+      <td><span class="fragment" data-fragment-index="0">Reproducible</span></td>
+      <td><span class="fragment" data-fragment-index="1">Replicable</span></td>
+    </tr>
+    <tr>
+      <th class="rowhead">Diferentes</th>
+      <td><span class="fragment" data-fragment-index="2">Robusto</span></td>
+      <td><span class="fragment is-accent" data-fragment-index="3">Generalizable</span></td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## 2.2 Evidencias clave {auto-animate="true"}
+
+> ¿Es “culpa de personas” y/o es **sistémico**?
+
+::: {.fragment}
+[¡En cualquier caso necesitamos cambiar prácticas y estructuras!]{.is-accent}
+:::
+
+# [Parte 3 · Principios de la *Ciencia Abierta*]{.is-accent auto-animate="true"}
+
+---
+
+## 3.1 Más allá del Open Access {auto-animate="true"}
+
+::: incremental
+-   **Open Access** (con matices: gold/green/diamond, costos, *waivers*)\
+-   **Open Data** (datos FAIR, reutilización responsable)\
+-   **Open Methods** (protocolos, metadatos, decisiones analíticas)\
+-   **Open Source** (software libre, entornos reproducibles)\
+-   **Open Peer Review** (mayor escrutinio, trazabilidad)\
+-   **Open Resources** (formación y materiales abiertos)
+:::
+
+---
+
+## 3.1 Más allá del Open Access {auto-animate="true"}
+
+> [Debemos abrir el *proceso* científico, no solo los PDFs.]{.is-accent style="font-size: 150%;"}
+
+::: r-stack
+![](img/Logo_open_access1.png){.fragment fig-align="center" width="20%"}
+
+![](img/Logo_open_access2.png){.fragment fig-align="center" width="20%"}
+:::
+
+---
+
+## 3.2 Software libre y reproducibilidad {auto-animate="true"}
+
+::: incremental
+- Entornos con **R / Python** y control de versiones <br>
+  ![](img/logo-r.svg){.logo alt="R"} |
+  ![](img/logo-RStudio.svg){.logo alt="R"} |
+  ![](img/logo-python.svg){.logo alt="Python"} |
+  ![](img/logo-jamovi.svg){.logo alt="Git"} |
+  ![](img/logo-jasp.svg){.logo alt="Git"} |
+  ![](img/logo-git.png){.logo alt="Git"}
+
+- Documentos reproducibles (**Quarto**, R Markdown) <br>
+  ![](img/logo-quarto.png){.logo alt="Quarto"} |
+  ![](img/logo-rmarkdown.png){.logo alt="R Markdown"} |
+  ![](img/logo-latex.svg){.logo alt="R Markdown"} |
+  ![](img/logo-overleaf.svg){.logo alt="R Markdown"}
+
+- Repositorios abiertos (OSF, GitHub, Zenodo) <br>
+  ![](img/logo-osf.png){.logo alt="OSF"} |
+  ![](img/logos-git.png){.logo alt="GitHub"} |
+  ![](img/logo-zenodo.png){.logo alt="Zenodo"}
+:::
+
+
+# [Parte 4 · Soluciones: *Prerregistro* y *Reportes Registrados*]{.is-accent auto-animate="true"}
+
+---
+
+## 4.1 Prerregistro {auto-animate="true"}
+
+**¿Qué es el prerregistro?**
+
+::: incremental
+* Especificar **antes** del estudio:\
+    * Preguntas e hipótesis\
+    * Diseño y criterios (incluye exclusión/inclusión)\
+    * Plan de análisis (variables, modelos, decisiones)
+:::
+
+::: {.fragment}
 Beneficios: transparencia, menor sesgo, claridad entre **confirmatorio** vs **exploratorio**.
+:::
 
 ---
 
-### ¿Se puede explorar?
+## 4.1 Prerregistro {auto-animate="true"}
 
-¡Sí! El prerregistro **no** prohíbe explorar:  
-- Documenta lo exploratorio como tal  
-- Puedes desviarte, explicando por qué  
-- El objetivo es **claridad y honestidad**, no rigidez
+<iframe src="https://www.cos.io/initiatives/prereg" width="100%" height="600px" style="border: 2px solid #ccc; border-radius: 8px;">
+</iframe>
 
 ---
 
-### Plataformas y plantillas
+## 4.2 Reportes Registrados (Registered Reports - RRs) {auto-animate="true"}
 
-- **OSF Registries** (p. ej., *AsPredicted.org*, Prereg, etc.)  
-- Flujos prácticos: crear borrador → completar campos → registrar (público o embargo)  
-- Buenas prácticas: justificar tamaño muestral, preregistrar variables y análisis
+**¿Qué es un reporte registrado?**
 
-<iframe src="https://www.cos.io/initiatives/prereg" width="100%" height="420px" style="border: 2px solid #ccc; border-radius: 8px;"></iframe>
-
----
-
-## Parte 4 · Registered Reports (RRs)
+::: r-stack
+![](img/RR.png){.fragment fig-align="center" width="100%"}
+:::
 
 ---
 
-### ¿Qué cambia con RRs?
+## 4.2 Reportes Registrados (Registered Reports - RRs) {auto-animate="true"}
 
-- **Revisión por pares antes** de recolectar datos (Stage 1)  
-- Aceptación en principio (**IPA**) → publicación no depende del resultado  
-- Enfoque en **calidad del diseño** y plan analítico  
-- Reducción de sesgo de publicación y prácticas cuestionables
+**Efectos**
 
----
+::::: columns
+::: {.column .fragment .fade-in width="50%"}
+![](img/image-6.png){top="200" right="50" height="380"} <br> [Fuente](https://www.fxstreet.com/analysis/eur-chf-has-stopped-going-down-at-month-end-202503270738){style="font-size: 50%;"}
+:::
 
-### Modelos y ecosistema
+::: {.column .fragment .fade-in width="50%"}
+![](img/image-2.png){top="200" left="0" height="380"} <br> 
+[[Scheel et al (2021)](https://doi.org/10.1177/25152459211007467)]{style="font-size: 50%;"}
+:::
+:::::
 
-- Revistas con formato RR (300+ y creciendo)  
-- **PCI RR**: plataforma *journal-agnostic* (gratis, abierta); tras IPA eliges entre múltiples revistas  
-- Adecuado para estudios **confirmatorios**; exploratorios siguen teniendo su lugar
 
-<iframe src="https://rr.peercommunityin.org" width="100%" height="420px" style="border: 2px solid #ccc; border-radius: 8px;"></iframe>
+# [Parte 5 · De la teoría a la acción: Semillero *MetaCiencia*]{.is-accent auto-animate="true"}
 
----
+![](img/logo_MetaCiencia.png){fig-align="center" width="40%"}
 
-## Parte 5 · De la teoría a la acción: Semillero **MetaCiencia**
+#  {auto-animate="true"}
 
----
-
-### ¿Qué es MetaCiencia?
-
-Un espacio transdisciplinar para formar estudiantes como **agentes de cambio** en:  
-- Ciencia Abierta (más allá del OA)  
-- Reproducibilidad computacional  
-- Ética e integridad científica  
-- Prerregistro y Registered Reports  
-- Uso de software libre y documentación rigurosa
-
-> Objetivo: transformar prácticas científicas desde etapas tempranas de formación universitaria.
+![](img/logo_MetaCiencia.png){fig-align="center" width="80%"}
 
 ---
 
-### Misión y Visión
+## 5.1 ¿Qué es MetaCiencia?
 
-**Misión**  
-Formar una comunidad comprometida con apertura, reproducibilidad y responsabilidad social, cuestionando estructuras tradicionales e impulsando metodologías abiertas.
 
-**Visión**  
-Ser referente nacional e internacional en formación y práctica de ciencia transparente, reproducible y justa, con impacto en políticas y cultura investigativa.
+[Un espacio transdisciplinar para convertirnos en **agentes de cambio**.]{.is-accent .fragment}
 
 ---
 
-### Objetivos específicos (selección)
+## 5.2 Objetivos {auto-animate="true"}
 
-1) Capacitar en herramientas y metodologías de investigación reproducible (software libre, prerregistro, RRs).  
-2) Fomentar **green OA**, apertura de datos y documentación de procesos.  
-3) Desarrollar **productos de divulgación** y repositorios abiertos.  
-4) Articular saberes (psicología, medicina, ciencias, diseño, etc.).  
-5) Promover liderazgo estudiantil y cultura científica colaborativa.
+:::: columns
+::: {.column width="50%"}
+> **Objetivo general:** transformar prácticas científicas desde etapas tempranas de formación universitaria.
+:::
+
+::: {.column width="50%" .incremental style="font-size:60%; line-height:1.25;"}
+1. Capacitar en herramientas y metodologías de investigación reproducible (software libre, prerregistro, RRs).
+2. Fomentar **green OA**, apertura de datos y documentación de procesos.
+3. Desarrollar **productos y estrategias de divulgación** y repositorios abiertos.
+4. Articular saberes (psicología, medicina, ciencias, diseño, etc.).
+5. Promover liderazgo estudiantil y cultura científica colaborativa.
+:::
+::::
 
 ---
 
-### ¿Por qué un semillero así para estudiantes?
-
-- Hay una **brecha** de formación en metaciencia y prácticas abiertas en pregrado.  
-- Iniciativas internacionales muestran que **sí se puede** integrar en currículos.  
-- Oportunidad de posicionar a estudiantes y a la UEB en el ecosistema global.  
+## 5.3 ¿Por qué un semillero así? {auto-animate="true"}
 
 ::: callout-note
 MetaCiencia alinea formación (CTeI), integridad y apropiación social del conocimiento.
 :::
 
----
-
-### Proyectos y rutas de trabajo
-
-- **Ruta Prerregistro**: talleres + plantillas OSF + ejemplos  
-- **Ruta RRs**: club de lectura + simulación de Stage 1 + envío a PCI RR  
-- **Ruta Reproducibilidad**: *from zero to Quarto* (scripts, datos, *session info*)  
-- **Ruta Divulgación**: micrositio, infografías, cápsulas en redes, wiki interna  
-- **Proyecto semilla**: “Adopción de Registered Reports en Iberoamérica” (mapeo → capacitación → infraestructura → evaluación → sostenibilidad)
+::: {.incremental style="font-size:70%; line-height:1.25;"}
+* Colombia y sus universidades están quedadas en pensar en cómo mejorar la cultura científica.\
+* Hay una **brecha** de formación en metaciencia y prácticas abiertas en pregrado y posgrado.\
+* Iniciativas internacionales muestran que **sí se puede** integrar en currículos.\
+* Oportunidad de posicionar a estudiantes y a la UEB en el ecosistema global.
+:::
 
 ---
 
-### ¿Cómo participar?
+## 5.4 ¿Quiénes pueden participar? {auto-animate="true"}
 
-- Abierto a estudiantes (énfasis en pregrado) y posgrado interesados  
-- No se requiere experiencia previa en investigación  
-- Modalidad: sesiones quincenales + proyectos guiados  
-- Escríbenos: [jleongomez@unbosque.edu.co](mailto:jleongomez@unbosque.edu.co)
-
----
-
-## Cierre · Ideas clave
-
-- Los retos de credibilidad son **sistémicos pero solucionables**  
-- Ciencia Abierta = abrir **procesos**, no solo artículos  
-- **Prerregistro** y **Registered Reports** realinean incentivos y mejoran el rigor  
-- **MetaCiencia** es el espacio para aprender-haciendo y transformar la cultura científica
+::: {.incremental style="line-height:1.25;"}
+- 🎓 **Estudiantes** de todas las áreas (énfasis en pregrado) y posgrado
+- 🌱 **No se requiere experiencia previa** en investigación
+- 🔎 **Intereses**:
+  [🧪 Ciencia]{.chip} [🧠 Filosofía]{.chip} [📊 Estadística]{.chip} [💻 Programación]{.chip}
+  [📣 Comunicación y divulgación]{.chip} [🤝🏫 Colaboración con estudiantes de otras carreras y universidades]{.chip}
+:::
 
 ---
 
-## Preguntas · Discusión
+## 5.4 ¿Quiénes pueden participar? {auto-animate="true"}
 
-- ¿Qué barreras perciben para aplicar estas prácticas en su programa?  
-- ¿Qué productos abiertos podríamos crear este semestre?
+::: {.poster}
+<span class="overline">Principio MetaCiencia</span><br>
+<span class="title">Cuestiona la <span class="is-accent">autoridad</span></span><br>
+:::
 
 ---
 
-## Extras (si hay tiempo)
+## ¡Gracias! {auto-animate="true" autoslide="1000"}
 
-- Explorar **OSF Registries** y **PCI RR**  
-- Comparar buenos vs. vagos ejemplos de prerregistro  
-- Demo: *from zero to Quarto* (plantilla, render, publicación)
+![](img/logo_MetaCiencia.png){fig-align="center" width="80%"}
+
+---
+
+## ¡Gracias! {auto-animate="true"}
+
+::::: columns
+::: {.column width="45%"}
+![](img/jdl_qr.png){width="80%"}
+:::
+
+::: {.column width="55%"}
+**Juan David Leongómez** [PhD, MSc]{style="font-size: 50%;"}<br> [[jleongomez\@unbosque.edu.co](mailto:jleongomez@unbosque.edu.co)]{style="font-size: 70%;"}<br>
+![](img/logo_MetaCiencia.png){fig-align="right" width="55%"}
+:::
+:::::
