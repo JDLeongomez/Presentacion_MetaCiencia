@@ -2,7 +2,7 @@
 library(tidyverse)
 
 # --- Usa los mismos parámetros que en tu animación ---
-set.seed(1234)          # <- igual que antes
+set.seed(2025)          # <- igual que antes
 n_poblacion <- 7000
 # Etiquetas (ajústalas a las que usaste en la animación)
 x_lab <- "Minutos de pataleta del gato por día"

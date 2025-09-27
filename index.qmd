@@ -107,13 +107,13 @@ library(gt)
 
 ## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
 
-![](img/p05.png)
+![](img/distribucion_pvals_poder.png)
 
 ---
 
 ## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
 
-![](img/power.gif?v=1)
+![](img/distribucion_pvals_poder.gif?v=1)
 
 ---
 
