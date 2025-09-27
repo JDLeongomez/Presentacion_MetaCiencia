@@ -469,11 +469,13 @@ Beneficios: transparencia, menor sesgo, claridad entre **confirmatorio** vs **ex
 
 ::::: columns
 ::: {.column .fragment .fade-in width="50%"}
-[![](img/image-6.png){top="200" right="50" height="380"}](https://doi.org/10.1371/journal.pbio.3000587) <br> [Allen & Mehler (2019)](https://doi.org/10.1371/journal.pbio.3000587){style="font-size: 50%;"}
+Ciencias biomédicas\
+[![](img/image-6.png){top="200" right="50" height="300"}](https://doi.org/10.1371/journal.pbio.3000246) <br> [Allen & Mehler (2019)](https://doi.org/10.1371/journal.pbio.3000246){style="font-size: 50%;"}
 :::
 
 ::: {.column .fragment .fade-in width="50%"}
-[![](img/image-2.png){top="200" left="0" height="380"}](https://doi.org/10.1177/25152459211007467) <br> 
+Psicología\
+[![](img/image-2.png){top="200" left="0" height="300"}](https://doi.org/10.1177/25152459211007467) <br> 
 [[Scheel et al (2021)](https://doi.org/10.1177/25152459211007467)]{style="font-size: 50%;"}
 :::
 :::::
