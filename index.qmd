@@ -83,7 +83,7 @@ library(gt)
 
 ![](img/variacion_muestral_base_estatica.png)
 
-[Script de R: falsos positivos](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/sim_efectos.R){.is-accent style="font-size: 40%;"}
+[Ver script de R: falsos positivos](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/falsos_positivos_simulacion.R){.is-accent style="font-size: 40%;"}
 
 ---
 
@@ -95,7 +95,7 @@ library(gt)
 
 ![](img/simulacion_estudios_slow.gif?v=1)
 
-[Script de R: falsos positivos](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/sim_efectos.R){.is-accent style="font-size: 40%;"}
+[Ver script de R: falsos positivos]https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/falsos_positivos_simulacion.R){.is-accent style="font-size: 40%;"}
 
 ---
 
@@ -107,7 +107,7 @@ library(gt)
 
 ![](img/simulacion_estudios_fast.gif?v=1)
 
-[Script de R: falsos positivos](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/sim_efectos.R){.is-accent style="font-size: 40%;"}
+[Ver script de R: falsos positivos](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/falsos_positivos_simulacion.R){.is-accent style="font-size: 40%;"}
 
 ---
 
@@ -115,7 +115,7 @@ library(gt)
 
 ![](img/distribucion_pvals_poder.png)
 
-[Script de R: distribución de valores p y poder estadístico](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/sim_efectos.R){.is-accent style="font-size: 40%;"}
+[Ver script de R: distribución de valores p y poder estadístico](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/distribucion_pvals_poder.R){.is-accent style="font-size: 40%;"}
 
 ---
 
@@ -123,7 +123,7 @@ library(gt)
 
 ![](img/distribucion_pvals_poder.gif?v=1)
 
-[Script de R: distribución de valores p y poder estadístico](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/sim_efectos.R){.is-accent style="font-size: 40%;"}
+[Ver script de R: distribución de valores p y poder estadístico](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/distribucion_pvals_poder.R){.is-accent style="font-size: 40%;"}
 
 ---
 
@@ -302,7 +302,9 @@ Los **cuatro jinetes del apocalipsis de la reproducibilidad**
 
 [Acceso desigual al conocimiento y a la producción científica]{.is-accent}
 
-![](img/Mapa_prod.png){fig-align="center" width="100%"}
+![](img/produccion_cientifica_2024.png){fig-align="center" width="100%"}
+
+[Ver script de R: maps de producción científica 2024](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/mapas_produccion_cientifica_2024.R){.is-accent style="font-size: 40%;"}
 
 ---
 
