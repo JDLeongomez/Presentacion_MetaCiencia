@@ -83,6 +83,8 @@ library(gt)
 
 ![](img/variacion_muestral_base_estatica.png)
 
+[Script de R: falsos positivos](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/sim_efectos.R){.is-accent style="font-size: 40%;"}
+
 ---
 
 ## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
@@ -92,6 +94,8 @@ library(gt)
 :::
 
 ![](img/simulacion_estudios_slow.gif?v=1)
+
+[Script de R: falsos positivos](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/sim_efectos.R){.is-accent style="font-size: 40%;"}
 
 ---
 
@@ -103,17 +107,23 @@ library(gt)
 
 ![](img/simulacion_estudios_fast.gif?v=1)
 
+[Script de R: falsos positivos](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/sim_efectos.R){.is-accent style="font-size: 40%;"}
+
 ---
 
 ## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
 
 ![](img/distribucion_pvals_poder.png)
 
+[Script de R: distribución de valores p y poder estadístico](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/sim_efectos.R){.is-accent style="font-size: 40%;"}
+
 ---
 
 ## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
 
 ![](img/distribucion_pvals_poder.gif?v=1)
+
+[Script de R: distribución de valores p y poder estadístico](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/sim_efectos.R){.is-accent style="font-size: 40%;"}
 
 ---
 
