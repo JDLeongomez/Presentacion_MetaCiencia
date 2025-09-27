@@ -95,7 +95,7 @@ library(gt)
 
 ![](img/simulacion_estudios_slow.gif?v=1)
 
-[Ver script de R: falsos positivos]https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/falsos_positivos_simulacion.R){.is-accent style="font-size: 40%;"}
+[Ver script de R: falsos positivos](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/falsos_positivos_simulacion.R){.is-accent style="font-size: 40%;"}
 
 ---
 
