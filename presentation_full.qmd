@@ -1,0 +1,572 @@
+---
+title: |
+  MetaCiencia:
+  <span style="font-size:70%;">Ciencia Abierta, Reproducibilidad y Transparencia</span>
+subtitle: "¿Cómo enfrentamos los retos de la ciencia?"
+author: "<span class='author-name' style='font-size:70%;'><strong>Juan David Leongómez</strong></span>
+  <span class='author-degrees' style='font-size:45%;'>PhD, MSc</span><br>
+  <span class='author-email'>
+    <a href='mailto:jleongomez@unbosque.edu.co'
+       style='font-size:60%; color:#d400aa !important; text-decoration:none;'>
+      jleongomez@unbosque.edu.co
+    </a>
+  </span>"
+
+format:
+  revealjs:
+    theme: [simple]
+    css: styles/simple-metaciencia.css
+    link-external-newwindow: true
+    center: true
+    center-title-slide: false
+    slide-number: true
+    transition: fade
+    background-transition: fade
+    incremental: false
+    controls: true
+    auto-animate: false
+    auto-animate-easing: ease-in-out
+    auto-animate-unmatched: false
+    auto-animate-duration: 0.8
+    logo: img/logos.png
+    footer: |
+      <span style="font-size:90%;"><a href="https://jdleongomez.info/es/" target="_blank">
+      <strong>Juan David Leongómez</strong></a></span>
+      <span style="font-size:50%;">PhD, MSc</span>
+
+      
+lang: es
+
+title-slide-attributes:
+  data-background-image: img/icono_MetaCiencia.png   # <- usa data-*
+  data-background-size: contain
+  data-background-opacity: "0.3"
+toc: true
+toc-depth: 1
+toc-expand: true
+---
+
+```{r}
+# Paquetes
+library(dplyr)
+library(stringr)
+library(gt)
+```
+
+### 📲 Accede a las diapositivas en línea
+
+[![](img/presentation-qr.svg){fig-align="center" width="45%"}](https://jdleongomez.github.io/Presentacion_MetaCiencia/)
+
+::: {.aside .center}
+![](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg){width="22" style="vertical-align:middle; margin-right:.35em;"}Materiales (incluyendo imágenes y código de R) disponibles en [GitHub](https://github.com/JDLeongomez/Presentacion_MetaCiencia)
+:::
+
+# [Parte 1 · Los desafíos para la credibilidad científica]{.is-accent auto-animate="true"}
+
+---
+
+## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
+
+¿Cómo se crea conocimiento?
+
+::: {.fragment .fade-in style="margin-top: 30px; font-size: 0.8em; color: #d400aa;"}
+¿Si mi gato hace más pataletas, sueño más con empanadas?
+:::
+
+---
+
+## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
+
+::: {style="font-size: 0.8em; color: #d400aa;"}
+¿Si mi gato hace más pataletas, sueño más con empanadas?
+:::
+
+![](img/variacion_muestral_base_estatica.png)
+
+[Ver script de R: falsos positivos](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/falsos_positivos_simulacion.R){.is-accent style="font-size: 40%;"}
+
+---
+
+## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
+
+::: {style="font-size: 0.8em; color: #d400aa;"}
+¿Si mi gato hace más pataletas, sueño más con empanadas?
+:::
+
+![](img/simulacion_estudios_slow.gif?v=1)
+
+[Ver script de R: falsos positivos](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/falsos_positivos_simulacion.R){.is-accent style="font-size: 40%;"}
+
+---
+
+## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
+
+::: {style="font-size: 0.8em; color: #d400aa;"}
+¿Si mi gato hace más pataletas, sueño más con empanadas?
+:::
+
+![](img/simulacion_estudios_fast.gif?v=1)
+
+[Ver script de R: falsos positivos](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/falsos_positivos_simulacion.R){.is-accent style="font-size: 40%;"}
+
+---
+
+## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
+
+![](img/distribucion_pvals_poder.png)
+
+[Ver script de R: distribución de valores p y poder estadístico](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/distribucion_pvals_poder.R){.is-accent style="font-size: 40%;"}
+
+---
+
+## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
+
+![](img/distribucion_pvals_poder.gif?v=1)
+
+[Ver script de R: distribución de valores p y poder estadístico](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/distribucion_pvals_poder.R){.is-accent style="font-size: 40%;"}
+
+---
+
+## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
+
+[https://shiny.jdl-svr.lat/PowerSimulate_corr_ES/](https://shiny.jdl-svr.lat/PowerSimulate_corr_ES/){style="font-size: 50%;"}
+<iframe src="https://shiny.jdl-svr.lat/PowerSimulate_corr_ES/" width="100%" height="400px" style="border: 3px solid #ccc; border-radius: 8px;">
+</iframe>
+
+---
+
+## 1.2 ¿Podemos confiar en la literatura? {auto-animate="true"}
+
+**Pregunta:** ¿Qué porcentaje de los hallazgos publicados en psicología son estadísticamente significativos?\
+
+---
+
+## 1.2 ¿Podemos confiar en la literatura? {auto-animate="true"}
+
+**Pregunta:** ¿Qué porcentaje de los hallazgos publicados en psicología son estadísticamente significativos?\
+**Respuesta:** [96%]{style="font-size: 150%; color:#d400aa;"}
+
+[[Bakker, Van Dijk y Wicherts (2012)](https://doi.org/10.1177/1745691612459060), [Brzeziński (2023)](https://doi.org/10.31648/przegldpsychologiczny.9680), [Scheel, Schijen y Lakens (2021)](https://doi.org/10.1177/25152459211007467)]{style="font-size: 50%;"}
+
+---
+
+## 1.2 ¿Podemos confiar en la literatura? {auto-animate="true"}
+
+:::: columns
+::: {.column .is-accent width="50%"}
+::: {.poster}
+La psicología necesita cansarse de ganar.
+
+[Haeffel (2022)](https://doi.org/10.1098/rsos.220099){style="font-size: 50%;"}
+:::
+:::
+::: {.column width="50%"}
+[![](img/winning.png){fig-align="center" width="90%"}](https://doi.org/10.1098/rsos.220099)
+:::
+::::
+
+---
+
+## 1.2 ¿Podemos confiar en la literatura? {auto-animate="true"}
+
+Hay 2 opciones:
+
+::: incremental
+1.  Estudiamos efectos con \>90% de potencia y \>90% de probabilidad de ser verdaderos.
+2.  [Existe un **sesgo de publicación masivo** (en múltiples disciplinas).]{.accent-on-click}
+:::
+
+---
+
+## 1.3 El filtro de significancia {auto-animate="true"}
+
+![](img/image-5.png){top="200" left="0" width="80%"}
+
+---
+
+## 1.3 El filtro de significancia {auto-animate="true"}
+
+::::: columns
+::: {.column width="50%"}
+1.2 millones de valores z investigación médica (1976–2019) ![](img/image.png){top="200" left="0" width="400"} <br> [[Barnett (2022)](https://medianwatch.netlify.app/post/z_values/), [van Zwet & Cator (2021)](https://doi.org/10.1111/stan.12241)]{style="font-size: 50%;"}
+:::
+
+::: {.column .fragment .fade-in width="50%"}
+<br><br>También en PLOS ONE <br>
+![](img/image-1.png){top="200" right="50" width="400"}  
+:::
+:::::
+
+---
+
+## 1.4 Amenazas a la replicabilidad científica {auto-animate="true"}
+
+::: incremental
+1.  🧪 **P-hacking**
+    * Probar múltiples análisis hasta obtener p \< .05
+    * Infla el error Tipo I
+2.  💡 **HARKing**
+    * *Hypothesising After Results are Known* (formular hipótesis tras conocer los resultados)
+    * Induce a error sobre la naturaleza de la prueba
+:::
+
+---
+
+## 1.4 Amenazas a la replicabilidad científica {auto-animate="true"}
+
+💡 [**HARKing**]{.is-accent}
+
+![](img/HARKing.jpeg)
+
+---
+
+## 1.4 Amenazas a la replicabilidad científica {auto-animate="true"}
+
+::: incremental
+3.  📦 **Sesgo de publicación**
+    * Las revistas prefieren resultados “positivos”
+    * Los nulos van al cajón
+4.  📏 **Bajo poder estadístico**
+    * Muestras pequeñas → falsos negativos y efectos inflados
+:::
+
+---
+
+## 1.4 Amenazas a la replicabilidad científica {auto-animate="true"}
+
+Los **cuatro jinetes del apocalipsis de la reproducibilidad**
+
+::: r-stack
+![](img/4horsemen.png){.fragment fig-align="center" width="80%"}
+:::
+
+---
+
+##  {auto-animate="true"}
+
+![](img/4horsemen.png){fig-align="center" width="100%"}
+
+# [Parte 2 · ¿Por qué necesitamos una *Ciencia Abierta*?]{.is-accent auto-animate="true"}
+
+---
+
+## 2.1 Desafíos actuales {auto-animate="true"}
+
+[Acceso desigual al conocimiento y a la producción científica]{.is-accent}
+
+::: r-stack
+![](img/nat-inaccesibility.webp){.fragment fig-align="center" width="80%"}
+:::
+
+---
+
+## 2.1 Desafíos actuales {auto-animate="true"}
+
+[Acceso desigual al conocimiento y a la producción científica]{.is-accent}
+
+![](img/nat-inaccesibility.webp){fig-align="center" width="20%"}
+
+---
+
+## 2.1 Desafíos actuales {auto-animate="true"}
+
+[Acceso desigual al conocimiento y a la producción científica]{.is-accent}
+
+:::::: columns
+:::: {.column width="50%"}
+::: r-stack
+[![](img/weird.png){width="100%"}](https://doi.org/10.1017/S0140525X0999152X)
+:::
+::::
+
+::: {.column width="50%"}
+**Sociedades:**
+
+[**W**]{.is-accent}estern [(Occidentales)]{style="font-size: 70%; color:#b3b3b3;"}
+
+[**E**]{.is-accent}ducated [(Educadas)]{style="font-size: 70%; color:#b3b3b3;"}
+
+[**I**]{.is-accent}ndustrialised [(Industrializadas)]{style="font-size: 70%; color:#b3b3b3;"}
+
+[**R**]{.is-accent}ich [(Ricas)]{style="font-size: 70%; color:#b3b3b3;"}
+
+[**D**]{.is-accent}emocratic [(Democráticas)]{style="font-size: 70%; color:#b3b3b3;"}
+
+[[Henrich et al. (2010)](https://doi.org/10.1017/S0140525X0999152X)]{style="font-size: 50%;"}
+:::
+::::::
+
+---
+
+## 2.1 Desafíos actuales {auto-animate="true"}
+
+[Acceso desigual al conocimiento y a la producción científica]{.is-accent}
+
+![](img/produccion_cientifica_2024.png){fig-align="center" width="100%"}
+
+[Ver script de R: maps de producción científica 2024](https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/mapas_produccion_cientifica_2024.R){.is-accent style="font-size: 40%;"}
+
+---
+
+## 2.1 Desafíos actuales {auto-animate="true"}
+
+**Adicionalmente:**
+
+::: incremental
+* Crisis de replicación y resultados poco robustos
+
+* Incentivos que favorecen “resultados positivos” y novedad
+
+* Métodos opacos y bajo poder estadístico
+:::
+
+---
+
+## 2.1 Desafíos actuales {auto-animate="true"}
+
+> [¿Qué espera y qué requiere la sociedad de la ciencia? ¿Qué estamos entregando?]{.is-accent style="font-size: 150%;"}
+
+---
+
+## 2.1 Desafíos actuales {auto-animate="true"}
+
+<table class="meta-matrix big">
+  <thead>
+    <tr>
+      <th class="empty"></th>
+      <th class="empty"></th>
+      <th class="spanner" colspan="2">Datos/Muestras</th>
+    </tr>
+    <tr>
+      <th class="empty"></th>
+      <th class="empty"></th>
+      <th>Mismos</th>
+      <th>Diferentes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <!-- rowspan REAL para “Código/Análisis” -->
+      <th class="stubhead" rowspan="2">Código/Análisis</th>
+      <th class="rowhead">Mismos</th>
+      <td><span class="fragment" data-fragment-index="0">Reproducible</span></td>
+      <td><span class="fragment" data-fragment-index="1">Replicable</span></td>
+    </tr>
+    <tr>
+      <th class="rowhead">Diferentes</th>
+      <td><span class="fragment" data-fragment-index="2">Robusto</span></td>
+      <td><span class="fragment is-accent" data-fragment-index="3">Generalizable</span></td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## 2.2 Evidencias clave {auto-animate="true"}
+
+> ¿Es “culpa de personas” y/o es **sistémico**?
+
+::: {.fragment}
+[¡En cualquier caso necesitamos cambiar prácticas y estructuras!]{.is-accent}
+:::
+
+# [Parte 3 · Principios de la *Ciencia Abierta*]{.is-accent auto-animate="true"}
+
+---
+
+## 3.1 Más allá del Open Access {auto-animate="true"}
+
+::: incremental
+-   **Open Access** (con matices: gold/green/diamond, costos, *waivers*)\
+-   **Open Data** (datos FAIR, reutilización responsable)\
+-   **Open Methods** (protocolos, metadatos, decisiones analíticas)\
+-   **Open Source** (software libre, entornos reproducibles)\
+-   **Open Peer Review** (mayor escrutinio, trazabilidad)\
+-   **Open Resources** (formación y materiales abiertos)
+:::
+
+---
+
+## 3.1 Más allá del Open Access {auto-animate="true"}
+
+> [Debemos abrir el *proceso* científico, no solo los PDFs.]{.is-accent style="font-size: 150%;"}
+
+::: r-stack
+![](img/Logo_open_access1.png){.fragment fig-align="center" width="20%"}
+
+![](img/Logo_open_access2.png){.fragment fig-align="center" width="20%"}
+:::
+
+---
+
+## 3.2 Software libre y reproducibilidad {auto-animate="true"}
+
+::: incremental
+- Entornos con **R / Python** y control de versiones <br>
+  [![](img/logo-r.svg){.logo alt="R"}](https://www.r-project.org) |
+  [![](img/logo-RStudio.svg){.logo alt="RStudio"}](https://posit.co/download/rstudio-desktop/) |
+  [![](img/logo-python.svg){.logo alt="Python"}](https://www.python.org) |
+  [![](img/logo-jamovi.svg){.logo alt="jamovi"}](https://www.jamovi.org) |
+  [![](img/logo-jasp.svg){.logo alt="JASP"}](https://jasp-stats.org) |
+  [![](img/logo-git.png){.logo alt="Git"}](https://git-scm.com)
+
+- Documentos reproducibles (**Quarto**, R Markdown) <br>
+  [![](img/logo-quarto.png){.logo alt="Quarto"}](https://quarto.org) |
+  [![](img/logo-rmarkdown.png){.logo alt="R Markdown"}](https://rmarkdown.rstudio.com) |
+  [![](img/logo-latex.svg){.logo alt="LaTeX"}](https://www.latex-project.org) |
+  [![](img/logo-overleaf.svg){.logo alt="Overleaf"}](https://www.overleaf.com)
+
+- Repositorios abiertos (OSF, GitHub, Zenodo) <br>
+  [![](img/logo-osf.png){.logo alt="OSF"}](https://osf.io) |
+    [![](img/logo-zenodo.png){.logo alt="Zenodo"}](https://zenodo.org) |
+  [![](img/logo-gitlab.png){.logo alt="GitLab"}](https://about.gitlab.com) |
+  [![](img/logo-github.png){.logo alt="GitHub"}](https://github.com)
+:::
+
+
+# [Parte 4 · Soluciones: *Prerregistro* y *Reportes Registrados*]{.is-accent auto-animate="true"}
+
+---
+
+## 4.1 Prerregistro {auto-animate="true"}
+
+**¿Qué es el prerregistro?**
+
+::: incremental
+* Especificar **antes** del estudio:\
+    * Preguntas e hipótesis\
+    * Diseño y criterios (incluye exclusión/inclusión)\
+    * Plan de análisis (variables, modelos, decisiones)
+:::
+
+::: {.fragment}
+Beneficios: transparencia, menor sesgo, claridad entre **confirmatorio** vs **exploratorio**.
+:::
+
+---
+
+## 4.1 Prerregistro {auto-animate="true"}
+
+<iframe src="https://www.cos.io/initiatives/prereg" width="100%" height="600px" style="border: 2px solid #ccc; border-radius: 8px;">
+</iframe>
+
+---
+
+## 4.2 Reportes Registrados (Registered Reports - RRs) {auto-animate="true"}
+
+**¿Qué es un reporte registrado?**
+
+::: r-stack
+[![](img/RR.png){.fragment fig-align="center" width="100%"}](https://www.cos.io/initiatives/registered-reports)
+[Center for Open Science](https://www.cos.io/initiatives/registered-reports){style="font-size: 50%;"}
+:::
+
+---
+
+## 4.2 Reportes Registrados (Registered Reports - RRs) {auto-animate="true"}
+
+**Efectos**
+
+::::: columns
+::: {.column .fragment .fade-in width="50%"}
+Ciencias biomédicas\
+[![](img/image-6.png){top="200" right="50" height="300"}](https://doi.org/10.1371/journal.pbio.3000246) <br> [Allen & Mehler (2019)](https://doi.org/10.1371/journal.pbio.3000246){style="font-size: 50%;"}
+:::
+
+::: {.column .fragment .fade-in width="50%"}
+Psicología\
+[![](img/image-2.png){top="200" left="0" height="300"}](https://doi.org/10.1177/25152459211007467) <br> 
+[[Scheel et al (2021)](https://doi.org/10.1177/25152459211007467)]{style="font-size: 50%;"}
+:::
+:::::
+
+
+# [Parte 5 · De la teoría a la acción: Semillero *MetaCiencia*]{.is-accent auto-animate="true"}
+
+![](img/logo_MetaCiencia.png){fig-align="center" width="40%"}
+
+---
+
+## 5.1 ¿Qué es MetaCiencia?
+
+
+[Un espacio transdisciplinar para convertirnos en **agentes de cambio**.]{.is-accent .fragment}
+
+---
+
+## 5.2 Objetivos {auto-animate="true"}
+
+:::: columns
+::: {.column width="50%"}
+> **Objetivo general:** transformar prácticas científicas desde etapas tempranas de formación universitaria.
+:::
+
+::: {.column width="50%" .incremental style="font-size:60%; line-height:1.25;"}
+1. Capacitar en herramientas y metodologías de investigación reproducible (software libre, prerregistro, RRs).
+2. Fomentar **green OA**, apertura de datos y documentación de procesos.
+3. Desarrollar **productos y estrategias de divulgación** y repositorios abiertos.
+4. Articular saberes (psicología, medicina, ciencias, diseño, etc.).
+5. Promover liderazgo estudiantil y cultura científica colaborativa.
+:::
+::::
+
+---
+
+## 5.3 ¿Por qué un semillero así? {auto-animate="true"}
+
+> MetaCiencia alinea formación (CTeI), integridad y apropiación social del conocimiento.
+
+::: {.incremental style="font-size:70%; line-height:1.25;"}
+* Colombia y sus universidades están quedadas en pensar en cómo mejorar la cultura científica.\
+* Hay una **brecha** de formación en metaciencia y prácticas abiertas en pregrado y posgrado.\
+* Iniciativas internacionales muestran que **sí se puede** integrar en currículos.\
+* Oportunidad de posicionar a estudiantes y a la UEB en el ecosistema global.
+:::
+
+---
+
+## 5.4 ¿Quiénes pueden participar? {auto-animate="true"}
+
+::: {.incremental style="line-height:1.25;"}
+- 🎓 **Estudiantes** (énfasis en pregrado) y profesionales de todas las áreas
+- 🌱 **No se requiere experiencia previa** en investigación
+- 🔎 **Intereses**:\
+  [🧪 Ciencia]{.chip} [🧠 Filosofía]{.chip} [📊 Estadística]{.chip} [💻 Programación]{.chip}
+  [📣 Comunicación y divulgación]{.chip} [🤝🏫 Colaboración con estudiantes de otras carreras y universidades]{.chip}
+:::
+
+---
+
+::: {.poster}
+<span class="overline">Principio MetaCiencia</span><br>
+<span class="title">Cuestiona la <span class="is-accent">autoridad</span></span><br>
+:::
+
+---
+
+## ¿Te interesa unirte a MetaCiencia? {auto-animate="true"}
+
+Escanea el código QR y deja tus datos para recibir más información sobre el semillero.
+
+[![](img/interes-qr.png){fig-align="center" width="40%"}](https://forms.office.com/r/k3wp85Tcdq)
+
+---
+
+## ¡Gracias! {auto-animate="true" autoslide="1000"}
+
+![](img/logo_MetaCiencia.png){fig-align="center" width="80%"}
+
+---
+
+## ¡Gracias! {auto-animate="true"}
+
+::::: columns
+::: {.column width="45%"}
+[![](img/jdl_qr.png){width="80%"}](https://jdleongomez.info/es/)
+:::
+
+::: {.column width="55%"}
+**Juan David Leongómez** [PhD, MSc]{style="font-size: 50%;"}<br> [[jleongomez\@unbosque.edu.co](mailto:jleongomez@unbosque.edu.co)]{style="font-size: 70%;"}<br>
+![](img/logo_MetaCiencia.png){fig-align="right" width="55%"}
+:::
+:::::

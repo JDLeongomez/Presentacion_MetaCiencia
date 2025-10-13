@@ -1,0 +1,22 @@
+project:
+  type: website
+
+site:
+  title: "MetaCiencia"
+  description: "Presentación y recursos — MetaCiencia"
+  output-dir: site
+
+author: "Juan David Leongómez"
+
+format:
+  revealjs:
+    css: styles/simple-metaciencia.css
+    theme: simple
+    transition: fade
+    slide-number: true
+
+# Opcional: puedes añadir pages si quieres controlar nav
+# pages:
+#   - index.qmd
+#   - presentation_full.qmd
+#   - index_short.qmd
