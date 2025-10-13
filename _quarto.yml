@@ -1,22 +1,25 @@
 project:
   type: website
+  output-dir: docs   # GitHub Pages publicará desde /docs
 
-site:
+website:
   title: "MetaCiencia"
-  description: "Presentación y recursos — MetaCiencia"
-  output-dir: site
-
-author: "Juan David Leongómez"
+  favicon: img/logo_MetaCiencia.png
+  navbar:
+    style: tab
+    logo: img/logo_MetaCiencia.png
+    left:
+      - text: "Inicio"
+        href: index.qmd
+      - text: "Versión completa"
+        href: presentation_full.html
+      - text: "Versión corta"
+        href: presentation_short.html
 
 format:
-  revealjs:
-    css: styles/simple-metaciencia.css
-    theme: simple
-    transition: fade
-    slide-number: true
+  html:
+    theme: cosmo
+    toc: false
+    self-contained: true
 
-# Opcional: puedes añadir pages si quieres controlar nav
-# pages:
-#   - index.qmd
-#   - presentation_full.qmd
-#   - index_short.qmd
+lang: es
