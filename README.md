@@ -6,7 +6,7 @@
 
 ![]()
 
-Este repositorio contiene la **presentación del semillero MetaCiencia**, enfocada en ciencia abierta, reproducibilidad y transparencia.
+Este repositorio contiene las **presentaciones del semillero MetaCiencia** (completa y resumida). El semillero se enfoca en ciencia abierta, reproducibilidad y transparencia.
 
 🔗 **Versión publicada (GitHub Pages):**  
 https://jdleongomez.github.io/Presentacion_MetaCiencia/

@@ -40,7 +40,7 @@ lang: es
 title-slide-attributes:
   data-background-image: img/icono_MetaCiencia.png   # <- usa data-*
   data-background-size: contain
-  data-background-opacity: "0.3"
+  data-background-opacity: "0.2"
 toc: true
 toc-depth: 1
 toc-expand: true
@@ -172,7 +172,7 @@ La psicología necesita cansarse de ganar.
 Hay 2 opciones:
 
 ::: incremental
-1.  Estudiamos efectos con \>90% de potencia y \>90% de probabilidad de ser verdaderos.
+1.  Estudiamos efectos con \>90% de poder y \>90% de probabilidad de ser verdaderos.
 2.  [Existe un **sesgo de publicación masivo** (en múltiples disciplinas).]{.accent-on-click}
 :::
 

@@ -40,7 +40,7 @@ lang: es
 title-slide-attributes:
   data-background-image: img/icono_MetaCiencia.png   # <- usa data-*
   data-background-size: contain
-  data-background-opacity: "0.3"
+  data-background-opacity: "0.2"
 toc: true
 toc-depth: 1
 toc-expand: true
@@ -127,14 +127,6 @@ library(gt)
 
 ---
 
-## 1.1 ¿Por qué es tan difícil generar conocimiento confiable? {auto-animate="true"}
-
-[https://shiny.jdl-svr.lat/PowerSimulate_corr_ES/](https://shiny.jdl-svr.lat/PowerSimulate_corr_ES/){style="font-size: 50%;"}
-<iframe src="https://shiny.jdl-svr.lat/PowerSimulate_corr_ES/" width="100%" height="400px" style="border: 3px solid #ccc; border-radius: 8px;">
-</iframe>
-
----
-
 ## 1.2 ¿Podemos confiar en la literatura? {auto-animate="true"}
 
 **Pregunta:** ¿Qué porcentaje de los hallazgos publicados en psicología son estadísticamente significativos?\
@@ -172,7 +164,7 @@ La psicología necesita cansarse de ganar.
 Hay 2 opciones:
 
 ::: incremental
-1.  Estudiamos efectos con \>90% de potencia y \>90% de probabilidad de ser verdaderos.
+1.  Estudiamos efectos con \>90% de poder y \>90% de probabilidad de ser verdaderos.
 2.  [Existe un **sesgo de publicación masivo** (en múltiples disciplinas).]{.accent-on-click}
 :::
 
@@ -207,7 +199,6 @@ Hay 2 opciones:
     * Infla el error Tipo I
 2.  💡 **HARKing**
     * *Hypothesising After Results are Known* (formular hipótesis tras conocer los resultados)
-    * Induce a error sobre la naturaleza de la prueba
 :::
 
 ---
@@ -310,67 +301,9 @@ Los **cuatro jinetes del apocalipsis de la reproducibilidad**
 
 ## 2.1 Desafíos actuales {auto-animate="true"}
 
-**Adicionalmente:**
-
-::: incremental
-* Crisis de replicación y resultados poco robustos
-
-* Incentivos que favorecen “resultados positivos” y novedad
-
-* Métodos opacos y bajo poder estadístico
-:::
-
----
-
-## 2.1 Desafíos actuales {auto-animate="true"}
-
 > [¿Qué espera y qué requiere la sociedad de la ciencia? ¿Qué estamos entregando?]{.is-accent style="font-size: 150%;"}
 
----
-
-## 2.1 Desafíos actuales {auto-animate="true"}
-
-<table class="meta-matrix big">
-  <thead>
-    <tr>
-      <th class="empty"></th>
-      <th class="empty"></th>
-      <th class="spanner" colspan="2">Datos/Muestras</th>
-    </tr>
-    <tr>
-      <th class="empty"></th>
-      <th class="empty"></th>
-      <th>Mismos</th>
-      <th>Diferentes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <!-- rowspan REAL para “Código/Análisis” -->
-      <th class="stubhead" rowspan="2">Código/Análisis</th>
-      <th class="rowhead">Mismos</th>
-      <td><span class="fragment" data-fragment-index="0">Reproducible</span></td>
-      <td><span class="fragment" data-fragment-index="1">Replicable</span></td>
-    </tr>
-    <tr>
-      <th class="rowhead">Diferentes</th>
-      <td><span class="fragment" data-fragment-index="2">Robusto</span></td>
-      <td><span class="fragment is-accent" data-fragment-index="3">Generalizable</span></td>
-    </tr>
-  </tbody>
-</table>
-
----
-
-## 2.2 Evidencias clave {auto-animate="true"}
-
-> ¿Es “culpa de personas” y/o es **sistémico**?
-
-::: {.fragment}
-[¡En cualquier caso necesitamos cambiar prácticas y estructuras!]{.is-accent}
-:::
-
-# [Parte 3 · Principios de la *Ciencia Abierta*]{.is-accent auto-animate="true"}
+# [Parte 3 · Soluciones desde la *Ciencia Abierta*]{.is-accent auto-animate="true"}
 
 ---
 
@@ -399,71 +332,7 @@ Los **cuatro jinetes del apocalipsis de la reproducibilidad**
 
 ---
 
-## 3.2 Software libre y reproducibilidad {auto-animate="true"}
-
-::: incremental
-- Entornos con **R / Python** y control de versiones <br>
-  [![](img/logo-r.svg){.logo alt="R"}](https://www.r-project.org) |
-  [![](img/logo-RStudio.svg){.logo alt="RStudio"}](https://posit.co/download/rstudio-desktop/) |
-  [![](img/logo-python.svg){.logo alt="Python"}](https://www.python.org) |
-  [![](img/logo-jamovi.svg){.logo alt="jamovi"}](https://www.jamovi.org) |
-  [![](img/logo-jasp.svg){.logo alt="JASP"}](https://jasp-stats.org) |
-  [![](img/logo-git.png){.logo alt="Git"}](https://git-scm.com)
-
-- Documentos reproducibles (**Quarto**, R Markdown) <br>
-  [![](img/logo-quarto.png){.logo alt="Quarto"}](https://quarto.org) |
-  [![](img/logo-rmarkdown.png){.logo alt="R Markdown"}](https://rmarkdown.rstudio.com) |
-  [![](img/logo-latex.svg){.logo alt="LaTeX"}](https://www.latex-project.org) |
-  [![](img/logo-overleaf.svg){.logo alt="Overleaf"}](https://www.overleaf.com)
-
-- Repositorios abiertos (OSF, GitHub, Zenodo) <br>
-  [![](img/logo-osf.png){.logo alt="OSF"}](https://osf.io) |
-    [![](img/logo-zenodo.png){.logo alt="Zenodo"}](https://zenodo.org) |
-  [![](img/logo-gitlab.png){.logo alt="GitLab"}](https://about.gitlab.com) |
-  [![](img/logo-github.png){.logo alt="GitHub"}](https://github.com)
-:::
-
-
-# [Parte 4 · Soluciones: *Prerregistro* y *Reportes Registrados*]{.is-accent auto-animate="true"}
-
----
-
-## 4.1 Prerregistro {auto-animate="true"}
-
-**¿Qué es el prerregistro?**
-
-::: incremental
-* Especificar **antes** del estudio:\
-    * Preguntas e hipótesis\
-    * Diseño y criterios (incluye exclusión/inclusión)\
-    * Plan de análisis (variables, modelos, decisiones)
-:::
-
-::: {.fragment}
-Beneficios: transparencia, menor sesgo, claridad entre **confirmatorio** vs **exploratorio**.
-:::
-
----
-
-## 4.1 Prerregistro {auto-animate="true"}
-
-<iframe src="https://www.cos.io/initiatives/prereg" width="100%" height="600px" style="border: 2px solid #ccc; border-radius: 8px;">
-</iframe>
-
----
-
-## 4.2 Reportes Registrados (Registered Reports - RRs) {auto-animate="true"}
-
-**¿Qué es un reporte registrado?**
-
-::: r-stack
-[![](img/RR.png){.fragment fig-align="center" width="100%"}](https://www.cos.io/initiatives/registered-reports)
-[Center for Open Science](https://www.cos.io/initiatives/registered-reports){style="font-size: 50%;"}
-:::
-
----
-
-## 4.2 Reportes Registrados (Registered Reports - RRs) {auto-animate="true"}
+## 3.2 Reportes Registrados (Registered Reports - RRs) {auto-animate="true"}
 
 **Efectos**
 
@@ -481,20 +350,13 @@ Psicología\
 :::::
 
 
-# [Parte 5 · De la teoría a la acción: Semillero *MetaCiencia*]{.is-accent auto-animate="true"}
+# [Parte 4 · De la teoría a la acción: Semillero *MetaCiencia*]{.is-accent auto-animate="true"}
 
 ![](img/logo_MetaCiencia.png){fig-align="center" width="40%"}
 
 ---
 
-## 5.1 ¿Qué es MetaCiencia?
-
-
-[Un espacio transdisciplinar para convertirnos en **agentes de cambio**.]{.is-accent .fragment}
-
----
-
-## 5.2 Objetivos {auto-animate="true"}
+## 4.1 Objetivos {auto-animate="true"}
 
 :::: columns
 ::: {.column width="50%"}
@@ -502,9 +364,8 @@ Psicología\
 :::
 
 ::: {.column width="50%" .incremental style="font-size:60%; line-height:1.25;"}
-1. Capacitar en herramientas y metodologías de investigación reproducible (software libre, prerregistro, RRs).
-2. Fomentar **green OA**, apertura de datos y documentación de procesos.
-3. Desarrollar **productos y estrategias de divulgación** y repositorios abiertos.
+1. Fomentar **green OA**, apertura de datos y documentación de procesos.
+2. Desarrollar **productos y estrategias de divulgación** y repositorios abiertos.
 4. Articular saberes (psicología, medicina, ciencias, diseño, etc.).
 5. Promover liderazgo estudiantil y cultura científica colaborativa.
 :::
@@ -512,20 +373,7 @@ Psicología\
 
 ---
 
-## 5.3 ¿Por qué un semillero así? {auto-animate="true"}
-
-> MetaCiencia alinea formación (CTeI), integridad y apropiación social del conocimiento.
-
-::: {.incremental style="font-size:70%; line-height:1.25;"}
-* Colombia y sus universidades están quedadas en pensar en cómo mejorar la cultura científica.\
-* Hay una **brecha** de formación en metaciencia y prácticas abiertas en pregrado y posgrado.\
-* Iniciativas internacionales muestran que **sí se puede** integrar en currículos.\
-* Oportunidad de posicionar a estudiantes y a la UEB en el ecosistema global.
-:::
-
----
-
-## 5.4 ¿Quiénes pueden participar? {auto-animate="true"}
+## 4.2 ¿Quiénes pueden participar? {auto-animate="true"}
 
 ::: {.incremental style="line-height:1.25;"}
 - 🎓 **Estudiantes** (énfasis en pregrado) y profesionales de todas las áreas
@@ -533,13 +381,6 @@ Psicología\
 - 🔎 **Intereses**:\
   [🧪 Ciencia]{.chip} [🧠 Filosofía]{.chip} [📊 Estadística]{.chip} [💻 Programación]{.chip}
   [📣 Comunicación y divulgación]{.chip} [🤝🏫 Colaboración con estudiantes de otras carreras y universidades]{.chip}
-:::
-
----
-
-::: {.poster}
-<span class="overline">Principio MetaCiencia</span><br>
-<span class="title">Cuestiona la <span class="is-accent">autoridad</span></span><br>
 :::
 
 ---

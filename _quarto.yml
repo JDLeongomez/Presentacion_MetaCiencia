@@ -12,14 +12,14 @@ website:
       - text: "Inicio"
         href: index.qmd
       - text: "Versión completa"
-        href: presentation_full.html
-      - text: "Versión corta"
-        href: presentation_short.html
-
+        href: presentacion_larga.html
+      - text: "Versión resumida"
+        href: presentacion_corta.html
+        
 format:
   html:
     theme: cosmo
     toc: false
-    self-contained: true
+    self-contained: false
 
 lang: es

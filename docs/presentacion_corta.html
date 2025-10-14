@@ -128,7 +128,7 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="img/icono_MetaCiencia.png" data-background-opacity="0.3" data-background-size="contain" class="quarto-title-block">
+<section id="title-slide" data-background-image="img/icono_MetaCiencia.png" data-background-opacity="0.2" data-background-size="contain" class="quarto-title-block">
   <h1 class="title"><p>MetaCiencia: <span style="font-size:70%;">Ciencia Abierta, Reproducibilidad y Transparencia</span></p></h1>
   <p class="subtitle">¿Cómo enfrentamos los retos de la ciencia?</p>
 
@@ -146,9 +146,8 @@
 <ul>
 <li><a href="#/parte-1-los-desafíos-para-la-credibilidad-científica" id="/toc-parte-1-los-desafíos-para-la-credibilidad-científica"><span class="is-accent" data-auto-animate="true">Parte 1 · Los desafíos para la credibilidad científica</span></a></li>
 <li><a href="#/parte-2-por-qué-necesitamos-una-ciencia-abierta" id="/toc-parte-2-por-qué-necesitamos-una-ciencia-abierta"><span class="is-accent" data-auto-animate="true">Parte 2 · ¿Por qué necesitamos una <em>Ciencia Abierta</em>?</span></a></li>
-<li><a href="#/parte-3-principios-de-la-ciencia-abierta" id="/toc-parte-3-principios-de-la-ciencia-abierta"><span class="is-accent" data-auto-animate="true">Parte 3 · Principios de la <em>Ciencia Abierta</em></span></a></li>
-<li><a href="#/parte-4-soluciones-prerregistro-y-reportes-registrados" id="/toc-parte-4-soluciones-prerregistro-y-reportes-registrados"><span class="is-accent" data-auto-animate="true">Parte 4 · Soluciones: <em>Prerregistro</em> y <em>Reportes Registrados</em></span></a></li>
-<li><a href="#/parte-5-de-la-teoría-a-la-acción-semillero-metaciencia" id="/toc-parte-5-de-la-teoría-a-la-acción-semillero-metaciencia"><span class="is-accent" data-auto-animate="true">Parte 5 · De la teoría a la acción: Semillero <em>MetaCiencia</em></span></a></li>
+<li><a href="#/parte-3-soluciones-desde-la-ciencia-abierta" id="/toc-parte-3-soluciones-desde-la-ciencia-abierta"><span class="is-accent" data-auto-animate="true">Parte 3 · Soluciones desde la <em>Ciencia Abierta</em></span></a></li>
+<li><a href="#/parte-4-de-la-teoría-a-la-acción-semillero-metaciencia" id="/toc-parte-4-de-la-teoría-a-la-acción-semillero-metaciencia"><span class="is-accent" data-auto-animate="true">Parte 4 · De la teoría a la acción: Semillero <em>MetaCiencia</em></span></a></li>
 </ul>
 </nav>
 </section>
@@ -210,10 +209,6 @@
 
 <img data-src="img/distribucion_pvals_poder.gif?v=1" class="r-stretch"><p><a href="https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/r_scripts/distribucion_pvals_poder.R" class="is-accent" style="font-size: 40%;">Ver script de R: distribución de valores p y poder estadístico</a></p>
 </section>
-<section id="por-qué-es-tan-difícil-generar-conocimiento-confiable-6" class="slide level2 center" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">1.1 ¿Por qué es tan difícil generar conocimiento confiable?</h2>
-<p><a href="https://shiny.jdl-svr.lat/PowerSimulate_corr_ES/" style="font-size: 50%;">https://shiny.jdl-svr.lat/PowerSimulate_corr_ES/</a> <iframe src="https://shiny.jdl-svr.lat/PowerSimulate_corr_ES/" width="100%" height="400px" style="border: 3px solid #ccc; border-radius: 8px;"> </iframe></p>
-</section>
 <section id="podemos-confiar-en-la-literatura" class="slide level2 center" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">1.2 ¿Podemos confiar en la literatura?</h2>
 <p><strong>Pregunta:</strong> ¿Qué porcentaje de los hallazgos publicados en psicología son estadísticamente significativos?<br>
@@ -245,7 +240,7 @@
 <h2 data-id="quarto-animate-title">1.2 ¿Podemos confiar en la literatura?</h2>
 <p>Hay 2 opciones:</p>
 <ol type="1">
-<li class="fragment">Estudiamos efectos con &gt;90% de potencia y &gt;90% de probabilidad de ser verdaderos.</li>
+<li class="fragment">Estudiamos efectos con &gt;90% de poder y &gt;90% de probabilidad de ser verdaderos.</li>
 <li class="fragment"><span class="accent-on-click">Existe un <strong>sesgo de publicación masivo</strong> (en múltiples disciplinas).</span></li>
 </ol>
 </section>
@@ -273,7 +268,6 @@
 <li class="fragment">💡 <strong>HARKing</strong>
 <ul>
 <li class="fragment"><em>Hypothesising After Results are Known</em> (formular hipótesis tras conocer los resultados)</li>
-<li class="fragment">Induce a error sobre la naturaleza de la prueba</li>
 </ul></li>
 </ol>
 </section>
@@ -358,87 +352,13 @@
 </section>
 <section id="desafíos-actuales-4" class="slide level2 center" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">2.1 Desafíos actuales</h2>
-<p><strong>Adicionalmente:</strong></p>
-<ul>
-<li class="fragment"><p>Crisis de replicación y resultados poco robustos</p></li>
-<li class="fragment"><p>Incentivos que favorecen “resultados positivos” y novedad</p></li>
-<li class="fragment"><p>Métodos opacos y bajo poder estadístico</p></li>
-</ul>
-</section>
-<section id="desafíos-actuales-5" class="slide level2 center" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">2.1 Desafíos actuales</h2>
 <blockquote>
 <p><span class="is-accent" style="font-size: 150%;">¿Qué espera y qué requiere la sociedad de la ciencia? ¿Qué estamos entregando?</span></p>
 </blockquote>
-</section>
-<section id="desafíos-actuales-6" class="slide level2 center" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">2.1 Desafíos actuales</h2>
-<table class="meta-matrix big">
-<thead>
-<tr>
-<th class="empty">
-</th>
-<th class="empty">
-</th>
-<th class="spanner" colspan="2">
-Datos/Muestras
-</th>
-</tr>
-<tr>
-<th class="empty">
-</th>
-<th class="empty">
-</th>
-<th>
-Mismos
-</th>
-<th>
-Diferentes
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<!-- rowspan REAL para “Código/Análisis” -->
-<th class="stubhead" rowspan="2">
-Código/Análisis
-</th>
-<th class="rowhead">
-Mismos
-</th>
-<td>
-<span class="fragment" data-fragment-index="0">Reproducible</span>
-</td>
-<td>
-<span class="fragment" data-fragment-index="1">Replicable</span>
-</td>
-</tr>
-<tr>
-<th class="rowhead">
-Diferentes
-</th>
-<td>
-<span class="fragment" data-fragment-index="2">Robusto</span>
-</td>
-<td>
-<span class="fragment is-accent" data-fragment-index="3">Generalizable</span>
-</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="evidencias-clave" class="slide level2 center" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">2.2 Evidencias clave</h2>
-<blockquote>
-<p>¿Es “culpa de personas” y/o es <strong>sistémico</strong>?</p>
-</blockquote>
-<div class="fragment">
-<p><span class="is-accent">¡En cualquier caso necesitamos cambiar prácticas y estructuras!</span></p>
-</div>
 </section></section>
 <section>
-<section id="parte-3-principios-de-la-ciencia-abierta" class="title-slide slide level1 center">
-<h1><span class="is-accent" data-auto-animate="true">Parte 3 · Principios de la <em>Ciencia Abierta</em></span></h1>
+<section id="parte-3-soluciones-desde-la-ciencia-abierta" class="title-slide slide level1 center">
+<h1><span class="is-accent" data-auto-animate="true">Parte 3 · Soluciones desde la <em>Ciencia Abierta</em></span></h1>
 
 </section>
 <section id="más-allá-del-open-access" class="slide level2 center" data-auto-animate="true">
@@ -475,51 +395,8 @@ Diferentes
 </div>
 </div>
 </section>
-<section id="software-libre-y-reproducibilidad" class="slide level2 center" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">3.2 Software libre y reproducibilidad</h2>
-<ul>
-<li class="fragment"><p>Entornos con <strong>R / Python</strong> y control de versiones <br> <a href="https://www.r-project.org"><img data-src="img/logo-r.svg" class="logo" alt="R"></a> | <a href="https://posit.co/download/rstudio-desktop/"><img data-src="img/logo-RStudio.svg" class="logo" alt="RStudio"></a> | <a href="https://www.python.org"><img data-src="img/logo-python.svg" class="logo" alt="Python"></a> | <a href="https://www.jamovi.org"><img data-src="img/logo-jamovi.svg" class="logo" alt="jamovi"></a> | <a href="https://jasp-stats.org"><img data-src="img/logo-jasp.svg" class="logo" alt="JASP"></a> | <a href="https://git-scm.com"><img data-src="img/logo-git.png" class="logo" alt="Git"></a></p></li>
-<li class="fragment"><p>Documentos reproducibles (<strong>Quarto</strong>, R Markdown) <br> <a href="https://quarto.org"><img data-src="img/logo-quarto.png" class="logo" alt="Quarto"></a> | <a href="https://rmarkdown.rstudio.com"><img data-src="img/logo-rmarkdown.png" class="logo" alt="R Markdown"></a> | <a href="https://www.latex-project.org"><img data-src="img/logo-latex.svg" class="logo" alt="LaTeX"></a> | <a href="https://www.overleaf.com"><img data-src="img/logo-overleaf.svg" class="logo" alt="Overleaf"></a></p></li>
-<li class="fragment"><p>Repositorios abiertos (OSF, GitHub, Zenodo) <br> <a href="https://osf.io"><img data-src="img/logo-osf.png" class="logo" alt="OSF"></a> | <a href="https://zenodo.org"><img data-src="img/logo-zenodo.png" class="logo" alt="Zenodo"></a> | <a href="https://about.gitlab.com"><img data-src="img/logo-gitlab.png" class="logo" alt="GitLab"></a> | <a href="https://github.com"><img data-src="img/logo-github.png" class="logo" alt="GitHub"></a></p></li>
-</ul>
-</section></section>
-<section>
-<section id="parte-4-soluciones-prerregistro-y-reportes-registrados" class="title-slide slide level1 center">
-<h1><span class="is-accent" data-auto-animate="true">Parte 4 · Soluciones: <em>Prerregistro</em> y <em>Reportes Registrados</em></span></h1>
-
-</section>
-<section id="prerregistro" class="slide level2 center" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">4.1 Prerregistro</h2>
-<p><strong>¿Qué es el prerregistro?</strong></p>
-<ul>
-<li class="fragment">Especificar <strong>antes</strong> del estudio:<br>
-
-<ul>
-<li class="fragment">Preguntas e hipótesis<br>
-</li>
-<li class="fragment">Diseño y criterios (incluye exclusión/inclusión)<br>
-</li>
-<li class="fragment">Plan de análisis (variables, modelos, decisiones)</li>
-</ul></li>
-</ul>
-<div class="fragment">
-<p>Beneficios: transparencia, menor sesgo, claridad entre <strong>confirmatorio</strong> vs <strong>exploratorio</strong>.</p>
-</div>
-</section>
-<section id="prerregistro-1" class="slide level2 center" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">4.1 Prerregistro</h2>
-<iframe src="https://www.cos.io/initiatives/prereg" width="100%" height="600px" style="border: 2px solid #ccc; border-radius: 8px;">
-</iframe>
-</section>
 <section id="reportes-registrados-registered-reports---rrs" class="slide level2 center" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">4.2 Reportes Registrados (Registered Reports - RRs)</h2>
-<p><strong>¿Qué es un reporte registrado?</strong></p>
-<div class="r-stack">
-<p><a href="https://www.cos.io/initiatives/registered-reports"><img data-src="img/RR.png" class="fragment quarto-figure quarto-figure-center" style="width:100.0%"></a> <a href="https://www.cos.io/initiatives/registered-reports" style="font-size: 50%;">Center for Open Science</a></p>
-</div>
-</section>
-<section id="reportes-registrados-registered-reports---rrs-1" class="slide level2 center" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">4.2 Reportes Registrados (Registered Reports - RRs)</h2>
+<h2 data-id="quarto-animate-title">3.2 Reportes Registrados (Registered Reports - RRs)</h2>
 <p><strong>Efectos</strong></p>
 <div class="columns">
 <div class="column fragment fade-in" style="width:50%;">
@@ -531,16 +408,12 @@ Diferentes
 </div></div>
 </section></section>
 <section>
-<section id="parte-5-de-la-teoría-a-la-acción-semillero-metaciencia" class="title-slide slide level1 center">
-<h1><span class="is-accent" data-auto-animate="true">Parte 5 · De la teoría a la acción: Semillero <em>MetaCiencia</em></span></h1>
+<section id="parte-4-de-la-teoría-a-la-acción-semillero-metaciencia" class="title-slide slide level1 center">
+<h1><span class="is-accent" data-auto-animate="true">Parte 4 · De la teoría a la acción: Semillero <em>MetaCiencia</em></span></h1>
 
 <img data-src="img/logo_MetaCiencia.png" class="quarto-figure quarto-figure-center r-stretch" style="width:40.0%"></section>
-<section id="qué-es-metaciencia" class="slide level2 center">
-<h2>5.1 ¿Qué es MetaCiencia?</h2>
-<p><span class="is-accent fragment">Un espacio transdisciplinar para convertirnos en <strong>agentes de cambio</strong>.</span></p>
-</section>
 <section id="objetivos" class="slide level2 center" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">5.2 Objetivos</h2>
+<h2 data-id="quarto-animate-title">4.1 Objetivos</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <blockquote>
@@ -548,7 +421,6 @@ Diferentes
 </blockquote>
 </div><div class="column" style="font-size:60%; line-height:1.25;">
 <ol type="1">
-<li class="fragment">Capacitar en herramientas y metodologías de investigación reproducible (software libre, prerregistro, RRs).</li>
 <li class="fragment">Fomentar <strong>green OA</strong>, apertura de datos y documentación de procesos.</li>
 <li class="fragment">Desarrollar <strong>productos y estrategias de divulgación</strong> y repositorios abiertos.</li>
 <li class="fragment">Articular saberes (psicología, medicina, ciencias, diseño, etc.).</li>
@@ -556,25 +428,8 @@ Diferentes
 </ol>
 </div></div>
 </section>
-<section id="por-qué-un-semillero-así" class="slide level2 center" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">5.3 ¿Por qué un semillero así?</h2>
-<blockquote>
-<p>MetaCiencia alinea formación (CTeI), integridad y apropiación social del conocimiento.</p>
-</blockquote>
-<div style="font-size:70%; line-height:1.25;">
-<ul>
-<li class="fragment">Colombia y sus universidades están quedadas en pensar en cómo mejorar la cultura científica.<br>
-</li>
-<li class="fragment">Hay una <strong>brecha</strong> de formación en metaciencia y prácticas abiertas en pregrado y posgrado.<br>
-</li>
-<li class="fragment">Iniciativas internacionales muestran que <strong>sí se puede</strong> integrar en currículos.<br>
-</li>
-<li class="fragment">Oportunidad de posicionar a estudiantes y a la UEB en el ecosistema global.</li>
-</ul>
-</div>
-</section>
 <section id="quiénes-pueden-participar" class="slide level2 center" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">5.4 ¿Quiénes pueden participar?</h2>
+<h2 data-id="quarto-animate-title">4.2 ¿Quiénes pueden participar?</h2>
 <div style="line-height:1.25;">
 <ul>
 <li class="fragment">🎓 <strong>Estudiantes</strong> (énfasis en pregrado) y profesionales de todas las áreas</li>
@@ -582,12 +437,6 @@ Diferentes
 <li class="fragment">🔎 <strong>Intereses</strong>:<br>
 <span class="chip">🧪 Ciencia</span> <span class="chip">🧠 Filosofía</span> <span class="chip">📊 Estadística</span> <span class="chip">💻 Programación</span> <span class="chip">📣 Comunicación y divulgación</span> <span class="chip">🤝🏫 Colaboración con estudiantes de otras carreras y universidades</span></li>
 </ul>
-</div>
-</section>
-<section class="slide level2 center">
-
-<div class="poster">
-<p><span class="overline">Principio MetaCiencia</span><br> <span class="title">Cuestiona la <span class="is-accent">autoridad</span></span><br></p>
 </div>
 </section>
 <section id="te-interesa-unirte-a-metaciencia" class="slide level2 center" data-auto-animate="true">
