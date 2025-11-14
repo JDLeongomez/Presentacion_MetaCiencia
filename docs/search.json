@@ -81,7 +81,7 @@
     "href": "presentacion_larga.html#podemos-confiar-en-la-literatura-3",
     "title": "MetaCiencia: Ciencia Abierta, Reproducibilidad y Transparencia",
     "section": "1.2 ¿Podemos confiar en la literatura?",
-    "text": "1.2 ¿Podemos confiar en la literatura?\nHay 2 opciones:\n\nEstudiamos efectos con &gt;90% de poder y &gt;90% de probabilidad de ser verdaderos.\nExiste un sesgo de publicación masivo (en múltiples disciplinas)."
+    "text": "1.2 ¿Podemos confiar en la literatura?\nHay 2 opciones:\n\n\nEstudiamos efectos con &gt;90% de poder y &gt;90% de probabilidad de ser verdaderos.\nExiste un sesgo de publicación masivo (en múltiples disciplinas)."
   },
   {
     "objectID": "presentacion_larga.html#el-filtro-de-significancia",
@@ -102,7 +102,7 @@
     "href": "presentacion_larga.html#amenazas-a-la-replicabilidad-científica",
     "title": "MetaCiencia: Ciencia Abierta, Reproducibilidad y Transparencia",
     "section": "1.4 Amenazas a la replicabilidad científica",
-    "text": "1.4 Amenazas a la replicabilidad científica\n\n🧪 P-hacking\n\nProbar múltiples análisis hasta obtener p &lt; .05\nInfla el error Tipo I\n\n💡 HARKing\n\nHypothesising After Results are Known (formular hipótesis tras conocer los resultados)\nInduce a error sobre la naturaleza de la prueba"
+    "text": "1.4 Amenazas a la replicabilidad científica\n\n\n🧪 P-hacking\n\nProbar múltiples análisis hasta obtener p &lt; .05\nInfla el error Tipo I\n\n💡 HARKing\n\nHypothesising After Results are Known (formular hipótesis tras conocer los resultados)\nInduce a error sobre la naturaleza de la prueba"
   },
   {
     "objectID": "presentacion_larga.html#amenazas-a-la-replicabilidad-científica-1",
@@ -116,7 +116,7 @@
     "href": "presentacion_larga.html#amenazas-a-la-replicabilidad-científica-2",
     "title": "MetaCiencia: Ciencia Abierta, Reproducibilidad y Transparencia",
     "section": "1.4 Amenazas a la replicabilidad científica",
-    "text": "1.4 Amenazas a la replicabilidad científica\n\n📦 Sesgo de publicación\n\nLas revistas prefieren resultados “positivos”\nLos nulos van al cajón\n\n📏 Bajo poder estadístico\n\nMuestras pequeñas → falsos negativos y efectos inflados"
+    "text": "1.4 Amenazas a la replicabilidad científica\n\n\n📦 Sesgo de publicación\n\nLas revistas prefieren resultados “positivos”\nLos nulos van al cajón\n\n📏 Bajo poder estadístico\n\nMuestras pequeñas → falsos negativos y efectos inflados"
   },
   {
     "objectID": "presentacion_larga.html#amenazas-a-la-replicabilidad-científica-3",
@@ -158,7 +158,7 @@
     "href": "presentacion_larga.html#desafíos-actuales-4",
     "title": "MetaCiencia: Ciencia Abierta, Reproducibilidad y Transparencia",
     "section": "2.1 Desafíos actuales",
-    "text": "2.1 Desafíos actuales\nAdicionalmente:\n\nCrisis de replicación y resultados poco robustos\nIncentivos que favorecen “resultados positivos” y novedad\nMétodos opacos y bajo poder estadístico"
+    "text": "2.1 Desafíos actuales\nAdicionalmente:\n\n\nCrisis de replicación y resultados poco robustos\nIncentivos que favorecen “resultados positivos” y novedad\nMétodos opacos y bajo poder estadístico"
   },
   {
     "objectID": "presentacion_larga.html#desafíos-actuales-5",
@@ -186,7 +186,7 @@
     "href": "presentacion_larga.html#más-allá-del-open-access",
     "title": "MetaCiencia: Ciencia Abierta, Reproducibilidad y Transparencia",
     "section": "3.1 Más allá del Open Access",
-    "text": "3.1 Más allá del Open Access\n\nOpen Access (con matices: gold/green/diamond, costos, waivers)\n\nOpen Data (datos FAIR, reutilización responsable)\n\nOpen Methods (protocolos, metadatos, decisiones analíticas)\n\nOpen Source (software libre, entornos reproducibles)\n\nOpen Peer Review (mayor escrutinio, trazabilidad)\n\nOpen Resources (formación y materiales abiertos)"
+    "text": "3.1 Más allá del Open Access\n\n\nOpen Access (con matices: gold/green/diamond, costos, waivers)\n\nOpen Data (datos FAIR, reutilización responsable)\n\nOpen Methods (protocolos, metadatos, decisiones analíticas)\n\nOpen Source (software libre, entornos reproducibles)\n\nOpen Peer Review (mayor escrutinio, trazabilidad)\n\nOpen Resources (formación y materiales abiertos)"
   },
   {
     "objectID": "presentacion_larga.html#más-allá-del-open-access-1",
@@ -200,14 +200,14 @@
     "href": "presentacion_larga.html#software-libre-y-reproducibilidad",
     "title": "MetaCiencia: Ciencia Abierta, Reproducibilidad y Transparencia",
     "section": "3.2 Software libre y reproducibilidad",
-    "text": "3.2 Software libre y reproducibilidad\n\nEntornos con R / Python y control de versiones   |  |  |  |  | \nDocumentos reproducibles (Quarto, R Markdown)   |  |  | \nRepositorios abiertos (OSF, GitHub, Zenodo)   |  |  |"
+    "text": "3.2 Software libre y reproducibilidad\n\n\nEntornos con R / Python y control de versiones   |  |  |  |  | \nDocumentos reproducibles (Quarto, R Markdown)   |  |  | \nRepositorios abiertos (OSF, GitHub, Zenodo)   |  |  |"
   },
   {
     "objectID": "presentacion_larga.html#prerregistro",
     "href": "presentacion_larga.html#prerregistro",
     "title": "MetaCiencia: Ciencia Abierta, Reproducibilidad y Transparencia",
     "section": "4.1 Prerregistro",
-    "text": "4.1 Prerregistro\n¿Qué es el prerregistro?\n\nEspecificar antes del estudio:\n\n\nPreguntas e hipótesis\n\nDiseño y criterios (incluye exclusión/inclusión)\n\nPlan de análisis (variables, modelos, decisiones)\n\n\n\nBeneficios: transparencia, menor sesgo, claridad entre confirmatorio vs exploratorio."
+    "text": "4.1 Prerregistro\n¿Qué es el prerregistro?\n\n\nEspecificar antes del estudio:\n\n\nPreguntas e hipótesis\n\nDiseño y criterios (incluye exclusión/inclusión)\n\nPlan de análisis (variables, modelos, decisiones)\n\n\n\n\nBeneficios: transparencia, menor sesgo, claridad entre confirmatorio vs exploratorio."
   },
   {
     "objectID": "presentacion_larga.html#prerregistro-1",
@@ -277,7 +277,7 @@
     "href": "presentacion_larga.html#gracias-1",
     "title": "MetaCiencia: Ciencia Abierta, Reproducibilidad y Transparencia",
     "section": "¡Gracias!",
-    "text": "¡Gracias!\n\n\n\n\nJuan David Leongómez PhD, MSc jleongomez@unbosque.edu.co"
+    "text": "¡Gracias!\n\n\n\n\nJuan David Leongómez PhD, MSc jleongomez@unbosque.edu.co \n\n\n\n\n\n\n Juan David Leongómez PhD, MSc"
   },
   {
     "objectID": "presentacion_corta.html#por-qué-es-tan-difícil-generar-conocimiento-confiable",
@@ -347,7 +347,7 @@
     "href": "presentacion_corta.html#podemos-confiar-en-la-literatura-3",
     "title": "MetaCiencia: Ciencia Abierta, Reproducibilidad y Transparencia",
     "section": "1.2 ¿Podemos confiar en la literatura?",
-    "text": "1.2 ¿Podemos confiar en la literatura?\nHay 2 opciones:\n\nEstudiamos efectos con &gt;90% de poder y &gt;90% de probabilidad de ser verdaderos.\nExiste un sesgo de publicación masivo (en múltiples disciplinas)."
+    "text": "1.2 ¿Podemos confiar en la literatura?\nHay 2 opciones:\n\n\nEstudiamos efectos con &gt;90% de poder y &gt;90% de probabilidad de ser verdaderos.\nExiste un sesgo de publicación masivo (en múltiples disciplinas)."
   },
   {
     "objectID": "presentacion_corta.html#el-filtro-de-significancia",
@@ -368,7 +368,7 @@
     "href": "presentacion_corta.html#amenazas-a-la-replicabilidad-científica",
     "title": "MetaCiencia: Ciencia Abierta, Reproducibilidad y Transparencia",
     "section": "1.4 Amenazas a la replicabilidad científica",
-    "text": "1.4 Amenazas a la replicabilidad científica\n\n🧪 P-hacking\n\nProbar múltiples análisis hasta obtener p &lt; .05\nInfla el error Tipo I\n\n💡 HARKing\n\nHypothesising After Results are Known (formular hipótesis tras conocer los resultados)"
+    "text": "1.4 Amenazas a la replicabilidad científica\n\n\n🧪 P-hacking\n\nProbar múltiples análisis hasta obtener p &lt; .05\nInfla el error Tipo I\n\n💡 HARKing\n\nHypothesising After Results are Known (formular hipótesis tras conocer los resultados)"
   },
   {
     "objectID": "presentacion_corta.html#amenazas-a-la-replicabilidad-científica-1",
@@ -382,7 +382,7 @@
     "href": "presentacion_corta.html#amenazas-a-la-replicabilidad-científica-2",
     "title": "MetaCiencia: Ciencia Abierta, Reproducibilidad y Transparencia",
     "section": "1.4 Amenazas a la replicabilidad científica",
-    "text": "1.4 Amenazas a la replicabilidad científica\n\n📦 Sesgo de publicación\n\nLas revistas prefieren resultados “positivos”\nLos nulos van al cajón\n\n📏 Bajo poder estadístico\n\nMuestras pequeñas → falsos negativos y efectos inflados"
+    "text": "1.4 Amenazas a la replicabilidad científica\n\n\n📦 Sesgo de publicación\n\nLas revistas prefieren resultados “positivos”\nLos nulos van al cajón\n\n📏 Bajo poder estadístico\n\nMuestras pequeñas → falsos negativos y efectos inflados"
   },
   {
     "objectID": "presentacion_corta.html#amenazas-a-la-replicabilidad-científica-3",
@@ -431,7 +431,7 @@
     "href": "presentacion_corta.html#más-allá-del-open-access",
     "title": "MetaCiencia: Ciencia Abierta, Reproducibilidad y Transparencia",
     "section": "3.1 Más allá del Open Access",
-    "text": "3.1 Más allá del Open Access\n\nOpen Access (con matices: gold/green/diamond, costos, waivers)\n\nOpen Data (datos FAIR, reutilización responsable)\n\nOpen Methods (protocolos, metadatos, decisiones analíticas)\n\nOpen Source (software libre, entornos reproducibles)\n\nOpen Peer Review (mayor escrutinio, trazabilidad)\n\nOpen Resources (formación y materiales abiertos)"
+    "text": "3.1 Más allá del Open Access\n\n\nOpen Access (con matices: gold/green/diamond, costos, waivers)\n\nOpen Data (datos FAIR, reutilización responsable)\n\nOpen Methods (protocolos, metadatos, decisiones analíticas)\n\nOpen Source (software libre, entornos reproducibles)\n\nOpen Peer Review (mayor escrutinio, trazabilidad)\n\nOpen Resources (formación y materiales abiertos)"
   },
   {
     "objectID": "presentacion_corta.html#más-allá-del-open-access-1",
@@ -480,6 +480,6 @@
     "href": "presentacion_corta.html#gracias-1",
     "title": "MetaCiencia: Ciencia Abierta, Reproducibilidad y Transparencia",
     "section": "¡Gracias!",
-    "text": "¡Gracias!\n\n\n\n\nJuan David Leongómez PhD, MSc jleongomez@unbosque.edu.co"
+    "text": "¡Gracias!\n\n\n\n\nJuan David Leongómez PhD, MSc jleongomez@unbosque.edu.co \n\n\n\n\n\n\n Juan David Leongómez PhD, MSc"
   }
 ]
