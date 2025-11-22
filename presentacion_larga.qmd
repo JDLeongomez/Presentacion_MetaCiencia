@@ -490,7 +490,7 @@ Psicología\
 ## 5.1 ¿Qué es MetaCiencia?
 
 
-[Un espacio transdisciplinar para convertirnos en **agentes de cambio**.]{.is-accent .fragment}
+[Un espacio transdisciplinar para convertirnos en **agentes que promuevan el cambio**.]{.is-accent .fragment}
 
 ---
 
@@ -520,7 +520,7 @@ Psicología\
 * Colombia y sus universidades están quedadas en pensar en cómo mejorar la cultura científica.\
 * Hay una **brecha** de formación en metaciencia y prácticas abiertas en pregrado y posgrado.\
 * Iniciativas internacionales muestran que **sí se puede** integrar en currículos.\
-* Oportunidad de posicionar a estudiantes y a la UEB en el ecosistema global.
+* Oportunidad de posicionar a estudiantes, a la UEB y al país en el ecosistema global.
 :::
 
 ---
@@ -528,7 +528,7 @@ Psicología\
 ## 5.4 ¿Quiénes pueden participar? {auto-animate="true"}
 
 ::: {.incremental style="line-height:1.25;"}
-- 🎓 **Estudiantes** (énfasis en pregrado) y profesionales de todas las áreas
+- 🎓 **Estudiantes** (pregrado y posgrado) y profesionales de todas las áreas
 - 🌱 **No se requiere experiencia previa** en investigación
 - 🔎 **Intereses**:\
   [🧪 Ciencia]{.chip} [🧠 Filosofía]{.chip} [📊 Estadística]{.chip} [💻 Programación]{.chip}
