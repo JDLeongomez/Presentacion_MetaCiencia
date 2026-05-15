@@ -34,7 +34,6 @@ format:
       <strong>Juan David Leongómez</strong></a></span>
       <span style="font-size:50%;">PhD, MSc</span>
 
-      
 lang: es
 
 title-slide-attributes:
