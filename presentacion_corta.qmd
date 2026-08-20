@@ -355,6 +355,12 @@ Psicología\
 
 ---
 
+### 🌐 Conoce más sobre MetaCiencia
+
+[![](img/qr-website.svg){fig-align="center" width="45%"}](https://jdleongomez.github.io/MetaCiencia/)
+
+---
+
 ## 4.1 Objetivos {auto-animate="true"}
 
 :::: columns
@@ -401,12 +407,21 @@ Escanea el código QR y deja tus datos para recibir más información sobre el s
 ## ¡Gracias! {auto-animate="true"}
 
 ::::: columns
-::: {.column width="45%"}
+::: {.column width="35%"}
 [![](img/jdl_qr.png){width="80%"}](https://jdleongomez.info/es/)
 :::
 
-::: {.column width="55%"}
-**Juan David Leongómez** [PhD, MSc]{style="font-size: 50%;"}<br> [[jleongomez\@unbosque.edu.co](mailto:jleongomez@unbosque.edu.co)]{style="font-size: 70%;"}<br>
-![](img/logo_MetaCiencia.png){fig-align="right" width="55%"}
+::: {.column width="65%"}
+**Juan David Leongómez** [PhD, MSc]{style="font-size: 50%;"}<br>
+[[jleongomez\@unbosque.edu.co](mailto:jleongomez@unbosque.edu.co)]{style="font-size: 70%;"}
+
+<div style="display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:0.5em; margin-top:0.1em;">
+<div style="text-align:center;">
+![](img/logo_MetaCiencia.png){width="50%"}
+</div>
+<div style="text-align:left;">
+[![](img/qr-website_url.png){width="75%"}](https://jdleongomez.github.io/MetaCiencia/)
+</div>
+</div>
 :::
 :::::
