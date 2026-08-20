@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JDLeongomez/Presentacion_MetaCiencia/heads/master/img/logo_MetaCiencia.png" alt="logo" height="200">
+  <img src="https://github.com/JDLeongomez/Presentacion_MetaCiencia/blob/master/img/logo_MetaCiencia.png?raw=true" alt="logo" height="200">
 </p>
 
 # Presentación MetaCiencia
